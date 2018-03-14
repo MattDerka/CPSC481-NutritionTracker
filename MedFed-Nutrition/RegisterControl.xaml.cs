@@ -9,7 +9,6 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -17,23 +16,13 @@ using System.Windows.Shapes;
 namespace MedFed_Nutrition
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for RegisterControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegisterControl : UserControl
     {
-        public MainWindow()
+        public RegisterControl()
         {
             InitializeComponent();
-
-            Storyboard sb = this.FindResource("Storyboard1") as Storyboard;
-            sb.Completed += OnStoryboardCompleted;
         }
-
-        private void OnStoryboardCompleted(object sender, EventArgs e)
-        {
-            this.SplashCanvas.Visibility = Visibility.Hidden;
-        }
-
-
     }
 }

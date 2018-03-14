@@ -6,7 +6,31 @@
         xmlns:local="clr-namespace:MedFed_Nutrition"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="SplashCanvas">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="RegButton">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
-        
+        <Canvas x:Name="SplashCanvas" Margin="136,39,130.6,34.8">
+            <Canvas Height="246.6" Width="252">
+
+                <Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="220" Stroke="Black" VerticalAlignment="Top" Width="252"/>
+                <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="92" Canvas.Top="181"/>
+                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="75" Canvas.Left="92" Canvas.Top="148"/>
+                <Button x:Name="RegButton" Content="Register" HorizontalAlignment="Left" Height="21.6" VerticalAlignment="Top" Width="75" Canvas.Left="92" Canvas.Top="225"/>
+
+            </Canvas>
+
+        </Canvas>
+
     </Grid>
 </Window>
