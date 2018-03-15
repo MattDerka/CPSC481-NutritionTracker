@@ -8,19 +8,29 @@
              d:DesignHeight="320.4" d:DesignWidth="518.6">
     <UserControl.Resources>
         <Storyboard x:Key="Storyboard1"/>
+        <Storyboard x:Key="SearchClick">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="search_View">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="search_View">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </UserControl.Resources>
     <UserControl.Triggers>
-        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button">
+            <BeginStoryboard x:Name="SearchClick_BeginStoryboard" Storyboard="{StaticResource SearchClick}"/>
         </EventTrigger>
     </UserControl.Triggers>
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
         <Rectangle Fill="#FFB9B9EE" HorizontalAlignment="Left" Height="46.2" Stroke="Black" VerticalAlignment="Top" Width="98.6" Margin="0,0,-98.6,-46.2"/>
         <Rectangle Fill="#FFB9CDEE" HorizontalAlignment="Left" Height="46.2" Margin="98.6,0,-518.6,-46.2" Stroke="Black" VerticalAlignment="Top" Width="420"/>
-        <TextBlock HorizontalAlignment="Left" Height="274.2" Margin="98.6,46.2,-518.6,-320.4" TextWrapping="Wrap" Text="Content" VerticalAlignment="Top" Width="420"/>
         <Rectangle Fill="#FF5A5AED" HorizontalAlignment="Left" Height="274.2" Margin="0,46.2,-98.6,-320.4" Stroke="Black" VerticalAlignment="Top" Width="98.6"/>
         <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Height="32.533" Margin="0,124,0,0" VerticalAlignment="Top" Width="98.6"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="263.867" Margin="103.6,56.533,0,0" VerticalAlignment="Top" Width="405" Opacity="0" Visibility="Hidden"/>
 
     </Grid>
 </UserControl>
