@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="MedFed_Nutrition.Search_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MedFed_Nutrition"
+             mc:Ignorable="d" 
+             d:DesignHeight="254.6" d:DesignWidth="401.2">
+    <Grid>
+        <Rectangle Fill="#FF9AF1A1" HorizontalAlignment="Left" Height="254.6" Margin="0,0,-192.8,-254.6" Stroke="Black" VerticalAlignment="Top" Width="192.8"/>
+        <Rectangle Fill="#FFDEF19A" HorizontalAlignment="Left" Height="254.6" Margin="197.8,0,-401.2,-254.6" Stroke="Black" VerticalAlignment="Top" Width="203.4"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="63.2,73.6,-129.6,-101.6" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="66.4" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="19.2" Margin="28.6,106.6,-153.6,-125.8" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <Button Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,130.8,-129.6,-164" VerticalAlignment="Top" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="268,0,-330.2,-26.4" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="62.2" FontSize="18"/>
+
+    </Grid>
+</UserControl>
