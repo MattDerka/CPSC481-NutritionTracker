@@ -18,10 +18,36 @@
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="AddClick">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="addControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="addControl">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OpenSettings">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="settings">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="settings">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </UserControl.Resources>
     <UserControl.Triggers>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button">
             <BeginStoryboard x:Name="SearchClick_BeginStoryboard" Storyboard="{StaticResource SearchClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AddRecipe">
+            <BeginStoryboard Storyboard="{StaticResource AddClick}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="image">
+            <BeginStoryboard x:Name="OpenSettings_BeginStoryboard" Storyboard="{StaticResource OpenSettings}"/>
         </EventTrigger>
     </UserControl.Triggers>
     <Grid>
@@ -31,6 +57,9 @@
         <Rectangle Fill="#FF5A5AED" HorizontalAlignment="Left" Height="274.2" Margin="0,46.2,-98.6,-320.4" Stroke="Black" VerticalAlignment="Top" Width="98.6"/>
         <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Height="32.533" Margin="0,124,0,0" VerticalAlignment="Top" Width="98.6"/>
         <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="263.867" Margin="103.6,56.533,0,0" VerticalAlignment="Top" Width="405" Opacity="0" Visibility="Hidden"/>
-
+        <Button x:Name="AddRecipe" Content="Add New Recipe" HorizontalAlignment="Left" Height="33.167" Margin="0,161.533,0,0" VerticalAlignment="Top" Width="98.6"/>
+        <local:AddControl x:Name="addControl" Margin="103.6,51.533,10,10" Opacity="0" Visibility="Hidden"/>
+        <Image x:Name="image" Source="setting.png" Margin="474.8,10.473,0,282.867"/>
+        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" Opacity="0" Visibility="Hidden"/>
     </Grid>
 </UserControl>
