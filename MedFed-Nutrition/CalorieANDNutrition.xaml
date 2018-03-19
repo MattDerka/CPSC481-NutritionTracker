@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="MedFed_Nutrition.CalorieANDNutrition"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MedFed_Nutrition"
+             mc:Ignorable="d" 
+             d:DesignHeight="259.2" d:DesignWidth="405">
+    <Grid>
+        <Rectangle Fill="#FFF6CF6E" HorizontalAlignment="Left" Height="259.2" Margin="0,0,-405,-259.2" Stroke="Black" VerticalAlignment="Top" Width="405"/>
+        <TextBlock HorizontalAlignment="Left" Height="28.8" Margin="136.2,24,-273.8,-52.8" TextWrapping="Wrap" VerticalAlignment="Top" Width="137.6" FontSize="18"><Run Text="Calories Needed"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="18.133" Margin="46.4,87.2,-109.6,-105.333" TextWrapping="Wrap" Text="Proteins:" VerticalAlignment="Top" Width="63.2" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Height="18.133" Margin="169.2,87.2,-218.8,-105.333" TextWrapping="Wrap" Text="Carbs:" VerticalAlignment="Top" Width="49.6" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Height="18.133" Margin="289.6,87.2,-339.2,-105.333" TextWrapping="Wrap" Text="Fats:" VerticalAlignment="Top" Width="49.6" FontSize="16"/>
+        <Ellipse Fill="#FFF6CF6E" HorizontalAlignment="Left" Height="63.2" Margin="46.4,118.4,-109.6,-181.6" Stroke="Black" VerticalAlignment="Top" Width="63.2"/>
+        <Ellipse Fill="#FFF6CF6E" HorizontalAlignment="Left" Height="63.2" Margin="158.4,118.4,-221.6,-181.6" Stroke="Black" VerticalAlignment="Top" Width="63.2"/>
+        <Ellipse Fill="#FFF6CF6E" HorizontalAlignment="Left" Height="63.2" Margin="275.4,118.4,-338.6,-181.6" Stroke="Black" VerticalAlignment="Top" Width="63.2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20.6" Margin="64.8,186.6,-90.4,-207.2" TextWrapping="Wrap" Text="25g" VerticalAlignment="Top" Width="25.6"/>
+        <TextBlock HorizontalAlignment="Left" Height="20.6" Margin="177.8,186.6,-206.6,-207.2" TextWrapping="Wrap" Text="200g" VerticalAlignment="Top" Width="28.8"/>
+        <TextBlock HorizontalAlignment="Left" Height="20.6" Margin="298.6,186.6,-317,-207.2" TextWrapping="Wrap" Text="3g" VerticalAlignment="Top" Width="18.4"/>
+
+    </Grid>
+</UserControl>

@@ -55,7 +55,6 @@
         </Canvas>
         <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" Opacity="0" Visibility="Hidden"/>
         <local:MainContent x:Name="mainContent" Visibility="Hidden"/>
-        <local:Search_View Margin="107.4,55.8,10,10" Opacity="0" Visibility="Hidden"/>
 
     </Grid>
 </Window>

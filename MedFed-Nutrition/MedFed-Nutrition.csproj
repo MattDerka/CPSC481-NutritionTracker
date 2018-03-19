@@ -57,6 +57,12 @@
     <Compile Include="AddControl.xaml.cs">
       <DependentUpon>AddControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CalorieANDNutrition.xaml.cs">
+      <DependentUpon>CalorieANDNutrition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GoalsControl.xaml.cs">
+      <DependentUpon>GoalsControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainContent.xaml.cs">
       <DependentUpon>MainContent.xaml</DependentUpon>
     </Compile>
@@ -76,6 +82,14 @@
       <DependentUpon>SettingsPanel.xaml</DependentUpon>
     </Compile>
     <Page Include="AddControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CalorieANDNutrition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GoalsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
