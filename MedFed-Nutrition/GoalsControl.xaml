@@ -11,7 +11,7 @@
         <Rectangle Fill="#FFEA924F" HorizontalAlignment="Left" Height="233.267" Margin="201.6,0,-405,-233.267" Stroke="Black" VerticalAlignment="Top" Width="203.4"/>
         <TextBlock HorizontalAlignment="Left" Height="26.867" Margin="33.2,5,-153.2,-31.867" TextWrapping="Wrap" Text="Set Calorie Goal" VerticalAlignment="Top" Width="120" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Height="26.867" Margin="262,5,-343.6,-31.867" TextWrapping="Wrap" VerticalAlignment="Top" Width="81.6" FontSize="16"><Run Text="Set "/><Run Text="Macros"/></TextBlock>
-        <Button x:Name="Submit" Content="Submit" HorizontalAlignment="Left" Height="20.6" Margin="169.8,238.267,-237.8,-258.867" VerticalAlignment="Top" Width="68"/>
+        <Button x:Name="Submit" Content="Save" HorizontalAlignment="Left" Height="20.6" Margin="169.8,238.267,-237.8,-258.867" VerticalAlignment="Top" Width="68"/>
         <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="225.6,48.667,-277.8,-75.067" TextWrapping="Wrap" Text="Protein:" VerticalAlignment="Top" Width="52.2" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="225.6,78.667,-277.8,-105.067" TextWrapping="Wrap" VerticalAlignment="Top" Width="52.2" FontSize="14"><Run Text="Carbs"/><Run Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="225.6,110.667,-257.8,-137.067" TextWrapping="Wrap" VerticalAlignment="Top" Width="32.2" FontSize="14" Text="Fats:"/>

@@ -13,6 +13,7 @@
         <TextBox HorizontalAlignment="Left" Height="19.2" Margin="28.6,106.6,-153.6,-125.8" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
         <Button Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,130.8,-129.6,-164" VerticalAlignment="Top" Width="80"/>
         <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="268,0,-330.2,-26.4" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="62.2" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="213.2" Margin="221.289,31.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157.8"/>
 
     </Grid>
 </UserControl>

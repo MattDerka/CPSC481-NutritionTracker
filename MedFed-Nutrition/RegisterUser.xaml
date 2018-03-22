@@ -25,7 +25,16 @@
     </UserControl.Triggers>
     <Grid x:Name="grid">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
-        <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Height="70.2" Margin="187.8,215.4,-358.2,-285.6" VerticalAlignment="Top" Width="170.4"/>
+        <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Height="49.19" Margin="205.309,215.4,0,0" VerticalAlignment="Top" Width="103.769"/>
+        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="191.278,81.157,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="60.403"/>
+        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="191.278,106.292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60.403"><Run Text="Last"/><Run Text=" Name:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="196.53,139.628,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55.151"><Run Text="Password"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="148.383,164.763,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103.298"><Run Text="Re-Enter Password"/><Run Text=":"/></TextBlock>
+        <PasswordBox HorizontalAlignment="Left" Margin="256.681,164.762,0,0" VerticalAlignment="Top" Width="96.167"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="256.681,141.802,0,0" VerticalAlignment="Top" Width="96.167"/>
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="20.135" Margin="256.681,81.157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96.167"/>
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="20.135" Margin="256.681,106.292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96.167"/>
+        <TextBlock HorizontalAlignment="Left" Height="35.016" Margin="218.437,23.13,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" Width="87.541" FontSize="24" TextDecorations="{x:Null}"/>
 
     </Grid>
 </UserControl>

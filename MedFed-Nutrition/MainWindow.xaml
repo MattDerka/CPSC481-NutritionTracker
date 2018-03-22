@@ -48,7 +48,11 @@
                 <Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="220" Stroke="Black" VerticalAlignment="Top" Width="252"/>
                 <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="92" Canvas.Top="181"/>
                 <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="75" Canvas.Left="92" Canvas.Top="148"/>
+                <TextBlock x:Name="Password" Canvas.Left="34.853" TextWrapping="Wrap" Text="Password:" Canvas.Top="148"/>
                 <Button x:Name="RegButton" Content="Register" HorizontalAlignment="Left" Height="21.6" VerticalAlignment="Top" Width="75" Canvas.Left="92" Canvas.Top="225"/>
+                <TextBlock x:Name="UsernameLabel" Height="16" TextWrapping="Wrap" Text="Username:" Canvas.Top="115.4" Width="56.8" RenderTransformOrigin="0.574,0.5" Canvas.Left="30.2"/>
+                <TextBox x:Name="Username" Height="15.96" Canvas.Left="92" TextWrapping="Wrap" Canvas.Top="115.44" Width="75"/>
+                <Image Source="pawn.png" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="75" Canvas.Left="92" Canvas.Top="10"/>
 
             </Canvas>
 

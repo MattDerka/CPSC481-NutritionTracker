@@ -58,6 +58,16 @@
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="ShowGoals">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="GoalsControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GoalsControl">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </UserControl.Resources>
     <UserControl.Triggers>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button">
@@ -75,6 +85,9 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="Logout">
             <BeginStoryboard x:Name="logout_BeginStoryboard1" Storyboard="{StaticResource logout}"/>
         </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="Goal">
+            <BeginStoryboard x:Name="ShowGoals_BeginStoryboard" Storyboard="{StaticResource ShowGoals}"/>
+        </EventTrigger>
     </UserControl.Triggers>
     <Grid x:Name="grid">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
@@ -91,6 +104,6 @@
         <Image x:Name="image" Source="setting.png" Margin="474.8,10.473,0,282.867"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" Opacity="0" Visibility="Hidden"/>
         <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="103.6,51.2,10,10" Visibility="Hidden" Opacity="0"/>
-        <local:GoalsControl Margin="103.6,51.533,10,10" Opacity="0" Visibility="Hidden"/>
+        <local:GoalsControl x:Name="GoalsControl" Margin="103.6,51.533,10,10" Opacity="0" Visibility="Hidden"/>
     </Grid>
 </UserControl>

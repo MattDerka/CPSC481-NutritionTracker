@@ -9,7 +9,7 @@
     <Grid>
         <Rectangle Fill="#FF5EEEC2" HorizontalAlignment="Left" Height="258.867" Margin="0,0,-161.6,-258.867" Stroke="Black" VerticalAlignment="Top" Width="161.6"/>
         <TextBlock HorizontalAlignment="Left" Height="17.267" Margin="41.6,5,-112,-22.267" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="70.4"/>
-        <TextBox HorizontalAlignment="Left" Height="184.2" Margin="12.8,27.267,-145.6,-211.467" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="132.8"/>
+        <TextBox HorizontalAlignment="Left" Height="184.2" Margin="12.8,27.267,-145.6,-211.467" TextWrapping="Wrap" VerticalAlignment="Top" Width="132.8"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="29" Margin="41.6,216.467,-120.8,-245.467" VerticalAlignment="Top" Width="79.2"/>
         <Rectangle Fill="#FF5EEEC2" HorizontalAlignment="Left" Height="258.867" Margin="166.6,0,-405,-258.867" Stroke="Black" VerticalAlignment="Top" Width="238.4"/>
         <TextBlock HorizontalAlignment="Left" Height="17.267" Margin="219,5,-343.8,-22.267" TextWrapping="Wrap" Text="Search For New Recipe" VerticalAlignment="Top" Width="124.8"/>
