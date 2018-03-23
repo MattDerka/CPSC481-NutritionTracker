@@ -53,10 +53,6 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="ShowGoals">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="GoalsControl">
@@ -102,8 +98,8 @@
         <Button x:Name="AddRecipe" Content="Add New Recipe" HorizontalAlignment="Left" Height="33.167" Margin="0,161.533,0,0" VerticalAlignment="Top" Width="98.6"/>
         <local:AddControl x:Name="addControl" Margin="103.6,51.533,10,10" Opacity="0" Visibility="Hidden"/>
         <Image x:Name="image" Source="setting.png" Margin="474.8,10.473,0,282.867"/>
-        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" Opacity="0" Visibility="Hidden"/>
         <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="103.6,51.2,10,10" Visibility="Hidden" Opacity="0"/>
         <local:GoalsControl x:Name="GoalsControl" Margin="103.6,51.533,10,10" Opacity="0" Visibility="Hidden"/>
+        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" Opacity="0" Visibility="Hidden"/>
     </Grid>
 </UserControl>

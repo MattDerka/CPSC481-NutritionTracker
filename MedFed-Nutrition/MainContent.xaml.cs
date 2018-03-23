@@ -23,6 +23,12 @@ namespace MedFed_Nutrition
         public MainContent()
         {
             InitializeComponent();
+            this.Logout.MouseLeftButtonUp += Logout_MouseLeftButtonUp;
+        }
+
+        private void Logout_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            this.grid.Visibility = Visibility.Hidden;
         }
     }
 }
