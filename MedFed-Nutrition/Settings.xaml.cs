@@ -23,6 +23,12 @@ namespace MedFed_Nutrition
         public Settings()
         {
             InitializeComponent();
+            this.image.MouseLeftButtonUp += Image_MouseLeftButtonUp;
+        }
+
+        private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            this.grid.Visibility = Visibility.Hidden;
         }
     }
 }

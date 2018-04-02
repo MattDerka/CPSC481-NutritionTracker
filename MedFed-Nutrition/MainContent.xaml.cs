@@ -28,12 +28,19 @@ namespace MedFed_Nutrition
             this.addControl.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
+            this.settings.Visibility = Visibility.Hidden;
 
             this.Logout.MouseLeftButtonUp += Logout_MouseLeftButtonUp;
             this.button.Click += SearchClick;
             this.AddRecipe.Click += AddRecipe_Click;
             this.NutritionButton.Click += NutritionButton_Click;
             this.Goal.Click += Goal_Click;
+            this.image.MouseLeftButtonUp += Logout_MouseLeftButtonUp1;
+        }
+
+        private void Logout_MouseLeftButtonUp1(object sender, MouseButtonEventArgs e)
+        {
+            this.settings.Visibility = Visibility.Visible;
         }
 
         private void Goal_Click(object sender, RoutedEventArgs e)

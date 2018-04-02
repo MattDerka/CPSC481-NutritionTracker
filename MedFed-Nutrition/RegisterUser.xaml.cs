@@ -23,6 +23,13 @@ namespace MedFed_Nutrition
         public RegisterUser()
         {
             InitializeComponent();
+
+            this.button.Click += Button_Click;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.grid.Visibility = Visibility.Hidden;
         }
     }
 }
