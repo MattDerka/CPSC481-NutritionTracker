@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,17 @@ namespace MedFed_Nutrition
         public AddControl()
         {
             InitializeComponent();
+            this.Browse.Click += Browse_Click;
+        }
+
+        private void Browse_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Title = "Select a Picture";
+            if (open.ShowDialog() == true)
+            {
+                Image.Source = new BitmapImage(new Uri(open.FileName));
+            }
         }
     }
 }

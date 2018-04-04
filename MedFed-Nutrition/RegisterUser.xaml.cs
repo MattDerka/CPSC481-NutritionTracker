@@ -29,7 +29,7 @@ namespace MedFed_Nutrition
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.grid.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;
         }
     }
 }

@@ -39,7 +39,7 @@ namespace MedFed_Nutrition
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
-           this.mainContent.Visibility = Visibility.Visible;
+            this.mainContent.Visibility = Visibility.Visible;
         }
 
         //private void OnStoryboardCompleted(object sender, EventArgs e)

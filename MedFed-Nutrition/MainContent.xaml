@@ -20,12 +20,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="OpenSettings">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="settings">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
         <Storyboard x:Key="ShowNutrition">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="calorieANDNutrition">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -44,27 +38,13 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="openSettings">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="settings">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </UserControl.Resources>
-    <UserControl.Triggers>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button">
-            <BeginStoryboard x:Name="SearchClick_BeginStoryboard" Storyboard="{StaticResource SearchClick}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AddRecipe">
-            <BeginStoryboard Storyboard="{StaticResource AddClick}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="image">
-            <BeginStoryboard x:Name="OpenSettings_BeginStoryboard" Storyboard="{StaticResource OpenSettings}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="NutritionButton">
-            <BeginStoryboard x:Name="ShowNutrition_BeginStoryboard1" Storyboard="{StaticResource ShowNutrition}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="Logout">
-            <BeginStoryboard x:Name="logout_BeginStoryboard1" Storyboard="{StaticResource logout}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="Goal">
-            <BeginStoryboard x:Name="ShowGoals_BeginStoryboard" Storyboard="{StaticResource ShowGoals}"/>
-        </EventTrigger>
-    </UserControl.Triggers>
     <Grid x:Name="grid">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
         <Rectangle Fill="#FFB9B9EE" HorizontalAlignment="Left" Height="46.2" Stroke="Black" VerticalAlignment="Top" Width="98.6" Margin="0,0,-98.6,-46.2"/>
@@ -72,14 +52,14 @@
         <Rectangle Fill="#FF5A5AED" HorizontalAlignment="Left" Height="274.2" Margin="0,46.2,-98.6,-320.4" Stroke="Black" VerticalAlignment="Top" Width="98.6"/>
         <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="430.8,15.473,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6"/>
         <Button x:Name="NutritionButton" Content="Nutrition" HorizontalAlignment="Left" Height="27.5" Margin="0,199.7,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Height="32.533" Margin="0,124,0,0" VerticalAlignment="Top" Width="98.6"/>
+        <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Height="32.533" Margin="0,124,0,0" VerticalAlignment="Top" Width="98.6"/>
         <Button x:Name="Goal" Content="Goals" HorizontalAlignment="Left" Height="26.4" Margin="0,232.2,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="263.867" Margin="103.6,56.533,0,0" VerticalAlignment="Top" Width="405" Opacity="0"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="263.867" Margin="103.6,56.533,0,0" VerticalAlignment="Top" Width="405" d:IsHidden="True"/>
         <Button x:Name="AddRecipe" Content="Add New Recipe" HorizontalAlignment="Left" Height="33.167" Margin="0,161.533,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <local:AddControl x:Name="addControl" Margin="103.6,51.533,10,10" Opacity="0"/>
+        <local:AddControl x:Name="addControl" Margin="103.6,51.533,10,10" d:IsHidden="True"/>
         <Image x:Name="image" Source="setting.png" Margin="474.8,10.473,0,282.867"/>
-        <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="103.6,51.2,10,10" Opacity="0"/>
-        <local:GoalsControl x:Name="GoalsControl" Margin="103.6,51.533,10,10" Opacity="0"/>
-        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" Opacity="0"/>
+        <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="103.6,51.2,10,10" d:IsHidden="True"/>
+        <local:GoalsControl x:Name="GoalsControl" Margin="103.6,51.533,10,10" d:IsHidden="True"/>
+        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
     </Grid>
 </UserControl>

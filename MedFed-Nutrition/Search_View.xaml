@@ -7,13 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="254.6" d:DesignWidth="401.2">
     <Grid>
-        <Rectangle Fill="#FF9AF1A1" HorizontalAlignment="Left" Height="254.6" Margin="0,0,-192.8,-254.6" Stroke="Black" VerticalAlignment="Top" Width="192.8"/>
-        <Rectangle Fill="#FFDEF19A" HorizontalAlignment="Left" Height="254.6" Margin="197.8,0,-401.2,-254.6" Stroke="Black" VerticalAlignment="Top" Width="203.4"/>
+        <Rectangle Fill="#FF9AF1A1" HorizontalAlignment="Left" Height="254.6" Stroke="Black" VerticalAlignment="Top" Width="401.2"/>
         <TextBlock HorizontalAlignment="Left" Height="28" Margin="63.2,73.6,-129.6,-101.6" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="66.4" FontSize="20"/>
         <TextBox HorizontalAlignment="Left" Height="19.2" Margin="28.6,106.6,-153.6,-125.8" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <Button Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,130.8,-129.6,-164" VerticalAlignment="Top" Width="80"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="268,0,-330.2,-26.4" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="62.2" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="213.2" Margin="221.289,31.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157.8"/>
+        <Button Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,160.4,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="250.4,0,0,0" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="62.2" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="213.2" Margin="198.889,31.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180.2"/>
+        <CheckBox Content="Online&#xD;&#xA;Online" HorizontalAlignment="Left" Height="16.8" Margin="119.6,138.6,0,0" VerticalAlignment="Top" Width="57.6"/>
+        <CheckBox Content="Application&#xD;&#xA;Application" HorizontalAlignment="Left" Height="17" Margin="21.6,138.4,0,0" VerticalAlignment="Top" Width="88"/>
 
     </Grid>
 </UserControl>
