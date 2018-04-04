@@ -26,10 +26,9 @@ namespace MedFed_Nutrition
             InitializeComponent();
             this.registerUser.Visibility = Visibility.Hidden;
             this.mainContent.Visibility = Visibility.Hidden;
-            //Storyboard sb = this.FindResource("Storyboard1") as Storyboard;
             this.SignIn.Click += SignIn_Click;
             this.RegButton.Click += RegButton_Click;
-            //sb.Completed += OnStoryboardCompleted;
+
         }
 
         private void RegButton_Click(object sender, RoutedEventArgs e)
@@ -41,12 +40,6 @@ namespace MedFed_Nutrition
         {
             this.mainContent.Visibility = Visibility.Visible;
         }
-
-        //private void OnStoryboardCompleted(object sender, EventArgs e)
-        // {
-        //   this.SplashCanvas.Visibility = Visibility.Hidden;
-        //}
-
 
     }
 }
