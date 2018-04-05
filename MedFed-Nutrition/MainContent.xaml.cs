@@ -78,6 +78,10 @@ namespace MedFed_Nutrition
         private void Logout_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
+            this.search_View.Visibility = Visibility.Hidden;
+            this.addControl.Visibility = Visibility.Hidden;
+            this.calorieANDNutrition.Visibility = Visibility.Hidden;
+            this.GoalsControl.Visibility = Visibility.Hidden;
         }
     }
 }

@@ -6,60 +6,20 @@
              xmlns:local="clr-namespace:MedFed_Nutrition"
              mc:Ignorable="d" 
              d:DesignHeight="320.4" d:DesignWidth="518.6">
-    <UserControl.Resources>
-        <Storyboard x:Key="Storyboard1"/>
-        <Storyboard x:Key="SearchClick">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="search_View">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="AddClick">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="addControl">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="ShowNutrition">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="calorieANDNutrition">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="logout">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="ShowGoals">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="GoalsControl">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="openSettings">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="settings">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-    </UserControl.Resources>
     <Grid x:Name="grid">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
         <Rectangle Fill="#FFB9B9EE" HorizontalAlignment="Left" Height="46.2" Stroke="Black" VerticalAlignment="Top" Width="98.6" Margin="0,0,-98.6,-46.2"/>
-        <Rectangle Fill="#FFB9CDEE" HorizontalAlignment="Left" Height="46.2" Margin="98.6,0,-518.6,-46.2" Stroke="Black" VerticalAlignment="Top" Width="420"/>
-        <Rectangle Fill="#FF5A5AED" HorizontalAlignment="Left" Height="274.2" Margin="0,46.2,-98.6,-320.4" Stroke="Black" VerticalAlignment="Top" Width="98.6"/>
-        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="430.8,15.473,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6"/>
-        <Button x:Name="NutritionButton" Content="Nutrition" HorizontalAlignment="Left" Height="27.5" Margin="0,199.7,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Height="32.533" Margin="0,124,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <Button x:Name="Goal" Content="Goals" HorizontalAlignment="Left" Height="26.4" Margin="0,232.2,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="263.867" Margin="103.6,56.533,0,0" VerticalAlignment="Top" Width="405" d:IsHidden="True"/>
-        <Button x:Name="AddRecipe" Content="Add New Recipe" HorizontalAlignment="Left" Height="33.167" Margin="0,161.533,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <local:AddControl x:Name="addControl" Margin="103.6,51.533,10,10" d:IsHidden="True"/>
-        <Image x:Name="image" Source="setting.png" Margin="474.8,10.473,0,282.867"/>
-        <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="103.6,51.2,10,10" d:IsHidden="True"/>
-        <local:GoalsControl x:Name="GoalsControl" Margin="103.6,51.533,10,10" d:IsHidden="True"/>
+        <Rectangle Fill="#FFB9CDEE" HorizontalAlignment="Left" Height="46.866" Margin="98.6,-0.666,0,0" Stroke="Black" VerticalAlignment="Top" Width="420"/>
+        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="411.6,14.787,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6" Cursor="Hand"/>
+        <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="268.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
+        <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="98.6,-0.666,0,0" VerticalAlignment="Top" Width="71.4"/>
+        <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="337.6,-0.666,0,0" VerticalAlignment="Top" Width="56.2"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="273.867" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
+        <Button x:Name="AddRecipe" Cursor="Hand" Content="Add New Recipe" HorizontalAlignment="Left" Height="46.866" Margin="170,-0.666,0,0" VerticalAlignment="Top" Width="98.6"/>
+        <local:AddControl x:Name="addControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
+        <Image x:Name="image" Source="setting.png" Margin="463.6,10,10,283.34" Cursor="Hand"/>
+        <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="0,46.2,0,0" d:IsHidden="True"/>
+        <local:GoalsControl x:Name="GoalsControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
     </Grid>
 </UserControl>
