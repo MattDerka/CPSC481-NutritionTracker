@@ -28,7 +28,7 @@ namespace MedFed_Nutrition
 
         private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            this.grid.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;
         }
     }
 }

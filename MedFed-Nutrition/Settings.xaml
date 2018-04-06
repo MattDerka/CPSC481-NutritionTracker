@@ -14,11 +14,6 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
-    <UserControl.Triggers>
-        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="image">
-            <BeginStoryboard Storyboard="{StaticResource Close}"/>
-        </EventTrigger>
-    </UserControl.Triggers>
     <Grid x:Name="grid">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
         <TextBlock HorizontalAlignment="Left" Height="28.533" Margin="231.8,25.659,0,0" TextWrapping="Wrap" Text="Settings" VerticalAlignment="Top" Width="79.2" FontSize="20"/>
