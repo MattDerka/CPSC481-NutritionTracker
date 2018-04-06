@@ -4,19 +4,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
-             mc:Ignorable="d" d:DesignWidth="518.6" Height="275.519">
+             mc:Ignorable="d" d:DesignWidth="1280" Height="673.8">
     <Grid>
-        <Rectangle Fill="#FF5EEEC2" HorizontalAlignment="Left" Height="275.519" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="17.267" Margin="81.332,5,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="70.4"/>
-        <TextBox x:Name="Desc" HorizontalAlignment="Left" Height="151.4" Margin="12.8,60.067,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213.772"/>
-        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="29" Margin="72.532,216.467,0,0" VerticalAlignment="Top" Width="79.2"/>
-        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Height="29" Margin="341.935,216.467,0,0" VerticalAlignment="Top" Width="116.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="18.4" Margin="267.003,111.031,0,0" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" Width="14.4"/>
-        <TextBlock HorizontalAlignment="Left" Height="20.8" Margin="369.935,10,0,0" TextWrapping="Wrap" Text="Upload Picture" VerticalAlignment="Top" Width="83"/>
-        <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" Height="19.2" Margin="385.88,35.8,0,0" VerticalAlignment="Top" Width="51.2" RenderTransformOrigin="2.782,-0.7"/>
-        <Image x:Name="Image" HorizontalAlignment="Left" Height="96.8" Margin="341.935,92.631,0,0" VerticalAlignment="Top" Width="144.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="24.2" Margin="12.8,37.8,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Width="31.2"/>
-        <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="19.2" Margin="44,35.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121.6"/>
+        <Rectangle Fill="#FF5EEEC2" HorizontalAlignment="Left" Height="673.8" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
+        <TextBlock HorizontalAlignment="Left" Height="34.867" Margin="177.865,13.917,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="123.2" FontSize="20"/>
+        <TextBox x:Name="Desc" HorizontalAlignment="Left" Height="356.2" Margin="44,103.031,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367.372"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="62.6" Margin="141.332,482.067,0,0" VerticalAlignment="Top" Width="170.963"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Height="72.2" Margin="908.335,482.067,0,0" VerticalAlignment="Top" Width="183"/>
+        <TextBlock HorizontalAlignment="Left" Height="63.2" Margin="553.403,307.831,0,0" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" Width="64" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Height="54.781" Margin="869.135,53.784,0,0" TextWrapping="Wrap" Text="Upload Picture" VerticalAlignment="Top" Width="241.4" FontSize="36"/>
+        <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" Height="19.2" Margin="958.68,146.2,0,0" VerticalAlignment="Top" Width="51.2" RenderTransformOrigin="2.782,-0.7"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="220" Margin="830.735,216.467,0,0" VerticalAlignment="Top" Width="328.636"/>
+        <TextBlock HorizontalAlignment="Left" Height="30.384" Margin="17.6,60.2,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Width="45.6" FontSize="20"/>
+        <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="44.247" Margin="81.332,53.784,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140.8" RenderTransformOrigin="0.5,0.5"/>
 
     </Grid>
 </UserControl>

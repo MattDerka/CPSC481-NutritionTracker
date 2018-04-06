@@ -14,7 +14,7 @@
         <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="268.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
         <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="47" Margin="83,-1,0,0" VerticalAlignment="Top" Width="87"/>
         <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="337.6,-0.666,0,0" VerticalAlignment="Top" Width="56.2"/>
-        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="273.867" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="673.467" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="1280"/>
         <Button x:Name="AddRecipe" Cursor="Hand" Content="Add New Recipe" HorizontalAlignment="Left" Height="46.866" Margin="170,-0.666,0,0" VerticalAlignment="Top" Width="98.6"/>
         <local:AddControl x:Name="addControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
         <Image x:Name="image" Source="setting.png" Margin="1197.867,0,0,673.8"/>
