@@ -18,6 +18,6 @@
         <Image x:Name="image" Source="setting.png" Margin="1197.867,0,0,673.8"/>
         <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="0,46.2,0,0" d:IsHidden="True"/>
         <local:GoalsControl x:Name="GoalsControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
-        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
+        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
     </Grid>
 </UserControl>
