@@ -16,7 +16,14 @@
     <Grid x:Name="grid">
 
         <Rectangle Fill="#FF21313A" Height="720" Stroke="Black" VerticalAlignment="Top"/>
-        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="421.647" Margin="465.55,180.353,0,0" Stroke="White" VerticalAlignment="Top" Width="418.321" UseLayoutRounding="False" RadiusX="10" RadiusY="10"/>
+        <Rectangle HorizontalAlignment="Left" Height="421.647" Margin="465.55,180.353,0,0" Stroke="White" VerticalAlignment="Top" Width="418.321" UseLayoutRounding="False" RadiusX="10" RadiusY="10">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF35464B" Offset="0"/>
+                    <GradientStop Color="#FF838383" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
         <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Height="43.357" Margin="608.748,526.072,0,0" VerticalAlignment="Top" Width="134.033" Cursor="Hand" FontSize="20" Background="#FF50DC9C" BorderBrush="{x:Null}" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Height="26.823" Margin="532.1,208.466,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="167.65" FontSize="20" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Height="26.462" Margin="532.865,280.105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167.65" FontSize="20" Foreground="White"><Run Text="Last"/><Run Text=" Name:"/></TextBlock>

@@ -20,25 +20,30 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
-    <Grid>
+    <Grid Width="1280" Height="720">
 
-        <Canvas x:Name="SplashCanvas" Margin="136,39,130.6,62">
-            <Canvas Height="219.933" Width="252">
+        <Canvas x:Name="SplashCanvas" Margin="-10,0,10,0" Width="1280" Height="720">
+            <Canvas Height="720" Width="1280" RenderTransformOrigin="0.519,0.46" Background="#FF21313A">
 
-                <Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="220" Stroke="Black" VerticalAlignment="Top" Width="252"/>
-                <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="30.2" Canvas.Top="180.18" Cursor="Hand" Height="21.6"/>
-                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="75" Canvas.Left="92" Canvas.Top="148"/>
-                <TextBlock x:Name="Password" Canvas.Left="34.853" TextWrapping="Wrap" Text="Password:" Canvas.Top="148"/>
-                <Button x:Name="RegButton" Content="Register" HorizontalAlignment="Left" Height="21.6" VerticalAlignment="Top" Width="75" Canvas.Left="136.267" Canvas.Top="180.18" Cursor="Hand"/>
-                <TextBlock x:Name="UsernameLabel" Height="16" TextWrapping="Wrap" Text="Username:" Canvas.Top="115.4" Width="56.8" RenderTransformOrigin="0.574,0.5" Canvas.Left="30.2"/>
-                <TextBox x:Name="Username" Height="15.96" Canvas.Left="92" TextWrapping="Wrap" Canvas.Top="115.44" Width="75"/>
-                <Image Source="pawn.png" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="75" Canvas.Left="92" Canvas.Top="10"/>
-
+                <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="376.833" Stroke="White" VerticalAlignment="Top" Width="341.152" Canvas.Left="492" Canvas.Top="136.5" RadiusX="10" RadiusY="10">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF979797" Offset="0"/>
+                            <GradientStop Color="#FF39494B" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Canvas.Left="526.667" Canvas.Top="420.688" Cursor="Hand" Height="37.614" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}"/>
+                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="270" Canvas.Left="526.667" Canvas.Top="352.76" Height="34.947"/>
+                <TextBlock x:Name="Password" Canvas.Left="528.934" TextWrapping="Wrap" Text="Password:" Canvas.Top="319.48" Height="33.28" Width="100" FontSize="20" Foreground="White"/>
+                <Button x:Name="RegButton" Content="Register" HorizontalAlignment="Left" Height="37.614" VerticalAlignment="Top" Width="123" Canvas.Left="673.667" Canvas.Top="420.688" Cursor="Hand" FontSize="20" Background="#FF636DC7" Foreground="White" BorderBrush="{x:Null}"/>
+                <TextBlock x:Name="UsernameLabel" Height="21.333" TextWrapping="Wrap" Text="Username:" Canvas.Top="244.867" Width="118.733" RenderTransformOrigin="0.574,0.5" Canvas.Left="528.934" FontSize="20" Foreground="White"/>
+                <TextBox x:Name="Username" Height="36.28" Canvas.Left="526.667" TextWrapping="Wrap" Canvas.Top="283.2" Width="270"/>
+                <Image Source="UserIcon.png" Height="78.571" Canvas.Left="621" Canvas.Top="149.296" Width="78.571" RenderTransformOrigin="0.293,0.531"/>
             </Canvas>
 
         </Canvas>
-        <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="690.4" VerticalAlignment="Top" Width="1273.6" d:IsHidden="True"/>
-        <local:MainContent x:Name="mainContent" d:IsHidden="True"/>
+
 
     </Grid>
 </Window>
