@@ -4,16 +4,36 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
-             mc:Ignorable="d" d:DesignWidth="518.6" Height="271.667">
+             mc:Ignorable="d" d:DesignWidth="1280" Height="720">
     <Grid>
-        <Rectangle Fill="#FFEA924F" HorizontalAlignment="Left" Height="271.667" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.867" Margin="110,10,0,0" TextWrapping="Wrap" Text="Set Calorie Goal" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.867" Margin="338.8,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81.6" FontSize="16"><Run Text="Set "/><Run Text="Macros"/></TextBlock>
-        <Button x:Name="Submit" Content="Save" HorizontalAlignment="Left" Height="20.6" Margin="223.8,228.267,0,0" VerticalAlignment="Top" Width="68"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="302.4,53.667,0,0" TextWrapping="Wrap" Text="Protein:" VerticalAlignment="Top" Width="52.2" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="302.4,83.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52.2" FontSize="14"><Run Text="Carbs"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="302.4,115.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32.2" FontSize="14" Text="Fats:"/>
-        <TextBlock HorizontalAlignment="Left" Height="47.2" Margin="89,53.667,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="141"/>
+        <Rectangle Fill="#FF21313A" Margin="0,0.867,0,0" Stroke="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="220.085" Margin="10,30.333,0,0" TextWrapping="Wrap" Text="Tell us about yourself" VerticalAlignment="Top" Width="615.2" FontSize="72" TextAlignment="Center" FontFamily="Segoe UI Black" Foreground="White"/>
+
+        <Label x:Name="ageLabel" Content="Age:" HorizontalAlignment="Left" Margin="87.8,250.418,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
+        <Label x:Name="weightLabel" Content="Weight (kg):" HorizontalAlignment="Left" Margin="87.8,318.301,0,343.815" FontSize="36" Foreground="White" d:LayoutOverrides="Height"/>
+        <Label x:Name="heightLabel" Content="Height (cm):" HorizontalAlignment="Left" Margin="87.8,0,0,280.931" Foreground="White" FontSize="36" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="ageInput" HorizontalAlignment="Left" Height="52.883" Margin="327.877,250.418,0,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="107.2" FontSize="36"/>
+        <TextBox x:Name="weightInput" HorizontalAlignment="Left" Margin="327.877,318.301,0,348.816" TextWrapping="Wrap" Text="78.5" Width="158.4" FontSize="36"/>
+        <TextBox x:Name="heightInput" HorizontalAlignment="Left" Margin="327.877,0,0,281.931" TextWrapping="Wrap" Text="176" Width="158.4" FontSize="36" Height="52.883" VerticalAlignment="Bottom"/>
+
+        <Rectangle Fill="#FF628EA6" HorizontalAlignment="Left" Height="60.623" Margin="37.227,0,0,152.4" Stroke="Black" VerticalAlignment="Bottom" Width="484.196"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="87.8,0,0,165.6" VerticalAlignment="Bottom" Width="398.477" Maximum="1" Minimum="-1" LargeChange="0"/>
+        <Label x:Name="label" Content="Maintain" HorizontalAlignment="Left" Height="36" Margin="249.6,0,0,177.023" VerticalAlignment="Bottom" Width="78.623" FontSize="18" Foreground="White"/>
+        <Label x:Name="label_Copy" Content="Gain 1 KG" HorizontalAlignment="Left" Height="36" Margin="430.8,0,0,177.023" VerticalAlignment="Bottom" Width="90.623" FontSize="18" Foreground="White"/>
+        <Label x:Name="label_Copy1" Content="Lose 1 KG" HorizontalAlignment="Left" Height="36" Margin="42.227,0,0,177.023" VerticalAlignment="Bottom" Width="103.823" FontSize="18" Foreground="White"/>
+        <Label x:Name="label_Copy2" Content="Weakly Goals:" HorizontalAlignment="Left" Height="42" Margin="42.227,0,0,213.023" VerticalAlignment="Bottom" Width="161.423" FontSize="24" Foreground="White"/>
+        <TextBlock Height="220.085" Margin="630.2,30.333,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" TextAlignment="Center" FontFamily="Segoe UI Black" Foreground="White"><Run Text="Here are our"/><Run Text=" daily"/><Run Text=" recommendations"/></TextBlock>
+
+        <Label x:Name="caloriesLabel" Content="Calories:" Margin="630.2,250.418,418.35,0" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
+        <TextBox x:Name="caloriesOutput" HorizontalAlignment="Right" Height="52.883" Margin="0,250.418,156.923,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="160" FontSize="36"/>
+        <Label x:Name="fatLabel" Content="Fat:" Margin="630.2,318.301,395.95,343.815" FontSize="36" Foreground="White" d:LayoutOverrides="Height"/>
+        <TextBox x:Name="fatOutput" HorizontalAlignment="Right" Margin="0,318.301,156.923,348.816" TextWrapping="Wrap" Text="21" Width="160" FontSize="36"/>
+        <Label x:Name="carbLabel" Content="Carbohydrates:" Margin="630.2,0,395.95,285.931" FontSize="36" Foreground="White" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="carbOutput" HorizontalAlignment="Right" Margin="0,0,156.923,286.931" TextWrapping="Wrap" Text="21" Width="160" FontSize="36" Height="52.883" VerticalAlignment="Bottom"/>
+        <Label x:Name="proteinLabel" Content="Protein:" Margin="630.2,0,395.95,223.047" FontSize="36" Foreground="White" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="proteinOutput" HorizontalAlignment="Right" Margin="0,0,156.923,223.047" TextWrapping="Wrap" Text="21" Width="160" FontSize="36" Height="52.883" VerticalAlignment="Bottom"/>
+        <Button x:Name="save" Content="Save" HorizontalAlignment="Right" Height="75.757" Margin="0,0,275.093,107.843" VerticalAlignment="Bottom" Width="178.707" FontSize="36"/>
+
 
     </Grid>
 </UserControl>
