@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MedFed_Nutrition"
         mc:Ignorable="d"
-        Title="Food Tracker" Height="350" Width="525">
+        Title="Food Tracker" Height="720" Width="1280">
     <Window.Resources>
         <Storyboard x:Key="Storyboard1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="registerUser">
@@ -37,8 +37,8 @@
             </Canvas>
 
         </Canvas>
-        <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
-        <local:MainContent x:Name="mainContent" d:IsHidden="True"/>
+        <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="690.4" VerticalAlignment="Top" Width="1273.6" d:IsHidden="True"/>
+        <local:MainContent x:Name="mainContent"/>
 
     </Grid>
 </Window>
