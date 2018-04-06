@@ -10,7 +10,7 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
         <Rectangle Fill="#FFB9B9EE" HorizontalAlignment="Left" Height="46.2" Stroke="Black" VerticalAlignment="Top" Width="98.6" Margin="0,0,-98.6,-46.2"/>
         <Rectangle Fill="#FFB9CDEE" HorizontalAlignment="Left" Height="46.866" Margin="98.6,-0.666,0,0" Stroke="Black" VerticalAlignment="Top" Width="420"/>
-        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="411.6,14.787,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6" Cursor="Hand"/>
+        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="411.6,14.787,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6" Cursor="Hand" TextDecorations="Underline"/>
         <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="268.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
         <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="47" Margin="83,-1,0,0" VerticalAlignment="Top" Width="87"/>
         <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="337.6,-0.666,0,0" VerticalAlignment="Top" Width="56.2"/>

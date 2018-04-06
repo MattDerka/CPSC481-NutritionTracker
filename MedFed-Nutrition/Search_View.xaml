@@ -8,12 +8,13 @@
     <Grid>
         <Rectangle Fill="#FF9AF1A1" HorizontalAlignment="Left" Height="272.2" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
         <TextBlock HorizontalAlignment="Left" Height="28" Margin="63.2,31.4,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="66.4" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="19.2" Margin="21.6,90.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <Button Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,160.4,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="SeachBox" HorizontalAlignment="Left" Height="19.2" Margin="21.6,90.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <Button x:Name="View" Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,160.4,0,0" VerticalAlignment="Top" Width="80"/>
         <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="347.6,0,0,0" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="62.2" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="213.2" Margin="279.889,31.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210.2"/>
-        <CheckBox Content="Online&#xD;&#xA;Online" HorizontalAlignment="Left" Height="16.8" Margin="119.6,138.6,0,0" VerticalAlignment="Top" Width="57.6"/>
-        <CheckBox Content="Application&#xD;&#xA;Application" HorizontalAlignment="Left" Height="17" Margin="21.6,138.4,0,0" VerticalAlignment="Top" Width="88"/>
+        <ListBox x:Name="ResultsBox" HorizontalAlignment="Left" Height="208" Margin="264,40.4,0,0" VerticalAlignment="Top" Width="218.4"/>
+        <RadioButton Content="Application" HorizontalAlignment="Left" Margin="21.6,138.6,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Online" HorizontalAlignment="Left" Height="16" Margin="123.2,139.4,0,0" VerticalAlignment="Top" Width="57.8"/>
+        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="272.2" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
 
     </Grid>
 </UserControl>
