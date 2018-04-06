@@ -26,6 +26,20 @@ namespace MedFed_Nutrition
         {
             InitializeComponent();
             this.Browse.Click += Browse_Click;
+            this.Save.Click += Save_Click;
+            this.Add.Click += Add_Click;
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            string saveMsg = "Recipe Added";
+            MessageBox.Show(saveMsg);
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            string saveMsg = "Recipe Saved";
+            MessageBox.Show(saveMsg);
         }
 
         private void Browse_Click(object sender, RoutedEventArgs e)

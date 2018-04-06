@@ -8,7 +8,7 @@
     <Grid>
         <Rectangle Fill="#FF5EEEC2" HorizontalAlignment="Left" Height="275.519" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
         <TextBlock HorizontalAlignment="Left" Height="17.267" Margin="81.332,5,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="70.4"/>
-        <TextBox HorizontalAlignment="Left" Height="151.4" Margin="12.8,60.067,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213.772"/>
+        <TextBox x:Name="Desc" HorizontalAlignment="Left" Height="151.4" Margin="12.8,60.067,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213.772"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="29" Margin="72.532,216.467,0,0" VerticalAlignment="Top" Width="79.2"/>
         <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Height="29" Margin="341.935,216.467,0,0" VerticalAlignment="Top" Width="116.6"/>
         <TextBlock HorizontalAlignment="Left" Height="18.4" Margin="267.003,111.031,0,0" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" Width="14.4"/>
@@ -16,7 +16,7 @@
         <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" Height="19.2" Margin="385.88,35.8,0,0" VerticalAlignment="Top" Width="51.2" RenderTransformOrigin="2.782,-0.7"/>
         <Image x:Name="Image" HorizontalAlignment="Left" Height="96.8" Margin="341.935,92.631,0,0" VerticalAlignment="Top" Width="144.6"/>
         <TextBlock HorizontalAlignment="Left" Height="24.2" Margin="12.8,37.8,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Width="31.2"/>
-        <TextBox HorizontalAlignment="Left" Height="19.2" Margin="44,35.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121.6"/>
+        <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="19.2" Margin="44,35.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121.6"/>
 
     </Grid>
 </UserControl>
