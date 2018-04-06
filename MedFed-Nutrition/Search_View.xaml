@@ -14,7 +14,7 @@
         <ListBox x:Name="ResultsBox" HorizontalAlignment="Left" Height="496.2" Margin="698.4,138.6,0,0" VerticalAlignment="Top" Width="504"/>
         <RadioButton Content="Application" HorizontalAlignment="Left" Margin="107.137,494.6,0,0" VerticalAlignment="Top" FontSize="20"/>
         <RadioButton Content="Online" HorizontalAlignment="Left" Height="29.6" Margin="319.937,494.6,0,0" VerticalAlignment="Top" Width="94.063" FontSize="20"/>
-        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="272.2" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
+        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1270"/>
 
     </Grid>
 </UserControl>

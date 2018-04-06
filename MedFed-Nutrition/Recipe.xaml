@@ -5,14 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
              mc:Ignorable="d" 
-             d:DesignHeight="275.719" d:DesignWidth="518.6">
+             d:DesignHeight="720" d:DesignWidth="1280">
     <Grid>
-        <Rectangle x:Name="Close" Fill="#FF4E1890" HorizontalAlignment="Left" Height="275.719" Margin="0,0,-518.6,-275.719" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="18.4" Margin="27.8,15.2,-109.4,-33.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="81.6" Foreground="White"><Run Text="Recipe Name"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="19.2" Margin="27.8,57.6,-98.6,-76.8" TextWrapping="Wrap" Text="Ingredients: " VerticalAlignment="Top" Width="70.8" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="27.8,104.8,-98.6,-124.8" TextWrapping="Wrap" Text="Instructions:" VerticalAlignment="Top" Width="70.8" Foreground="White"/>
-        <Button x:Name="CloseBtn" Content="X" HorizontalAlignment="Left" Height="20.2" Margin="492.802,0.13,0,0" VerticalAlignment="Top" Width="25.798" Background="Red"/>
-        <Button x:Name="PrintBtn" Content="Print" HorizontalAlignment="Left" Height="23.919" Margin="209.6,241.8,0,0" VerticalAlignment="Top" Width="84.8"/>
+        <Rectangle x:Name="Close" Fill="White" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
+        <TextBlock HorizontalAlignment="Left" Height="42.4" Margin="27.8,58.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144.432" Foreground="Black" FontSize="20"><Run Text="Recipe Name"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="35.2" Margin="27.8,276.8,0,0" TextWrapping="Wrap" Text="Ingredients: " VerticalAlignment="Top" Width="112.4" Foreground="Black" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="40.8" Margin="27.8,372,0,0" TextWrapping="Wrap" Text="Instructions:" VerticalAlignment="Top" Width="144.432" Foreground="Black" FontSize="20"/>
+        <Button x:Name="CloseBtn" Content="X" HorizontalAlignment="Left" Height="33.47" Margin="1233.402,0.13,0,0" VerticalAlignment="Top" Width="46.598" Background="Red"/>
+        <Button x:Name="PrintBtn" Content="Print" HorizontalAlignment="Left" Height="76.719" Margin="524,517.8,0,0" VerticalAlignment="Top" Width="271.992"/>
 
     </Grid>
 </UserControl>
