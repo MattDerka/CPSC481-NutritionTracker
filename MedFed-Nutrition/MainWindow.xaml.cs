@@ -41,5 +41,9 @@ namespace MedFed_Nutrition
             this.mainContent.Visibility = Visibility.Visible;
         }
 
+        private void Username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
