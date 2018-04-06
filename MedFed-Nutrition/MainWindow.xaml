@@ -43,7 +43,8 @@
             </Canvas>
 
         </Canvas>
-
+        <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="690.4" VerticalAlignment="Top" Width="1273.6" d:IsHidden="True"/>
+        <local:MainContent x:Name="mainContent" d:IsHidden="True"/>
 
     </Grid>
 </Window>
