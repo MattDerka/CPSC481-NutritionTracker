@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
-             mc:Ignorable="d" 
-             d:DesignHeight="320.4" d:DesignWidth="518.6">
+             mc:Ignorable="d" Height="720" Width="1280">
     <UserControl.Resources>
         <Storyboard x:Key="RegisterClick">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
@@ -15,17 +14,19 @@
         </Storyboard>
     </UserControl.Resources>
     <Grid x:Name="grid">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
-        <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Height="49.19" Margin="205.309,215.4,0,0" VerticalAlignment="Top" Width="103.769" Cursor="Hand"/>
-        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="191.278,81.157,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="60.403"/>
-        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="191.278,106.292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60.403"><Run Text="Last"/><Run Text=" Name:"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="196.53,139.628,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55.151"><Run Text="Password"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="20.135" Margin="148.383,164.763,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103.298"><Run Text="Re-Enter Password"/><Run Text=":"/></TextBlock>
-        <PasswordBox HorizontalAlignment="Left" Margin="256.681,164.762,0,0" VerticalAlignment="Top" Width="96.167"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="256.681,141.802,0,0" VerticalAlignment="Top" Width="96.167"/>
-        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="20.135" Margin="256.681,81.157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96.167"/>
-        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="20.135" Margin="256.681,106.292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96.167"/>
-        <TextBlock HorizontalAlignment="Left" Height="35.016" Margin="218.437,23.13,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" Width="87.541" FontSize="24" TextDecorations="{x:Null}"/>
+
+        <Rectangle Fill="#FF21313A" Height="720" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="630.991" Margin="357,46.009,0,0" Stroke="White" VerticalAlignment="Top" Width="625.871" UseLayoutRounding="False" RadiusX="10" RadiusY="10" StrokeThickness="2"/>
+        <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Height="66.823" Margin="561.441,563.767,0,0" VerticalAlignment="Top" Width="206.571" Cursor="Hand" FontSize="28" Background="#FF50DC9C" BorderBrush="{x:Null}" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="33.58" Margin="468.55,174.932,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="260.692" FontSize="25" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="33.129" Margin="468.55,258.359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260.692" FontSize="25" Foreground="White"><Run Text="Last"/><Run Text=" Name:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49.847" Margin="468.55,345.853,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238.025" Foreground="White" FontSize="25"><Run Text="Password"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49.847" Margin="468.55,431.901,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="445.821" FontSize="25" Foreground="White"><Run Text="Re-Enter Password"/><Run Text=":"/></TextBlock>
+        <PasswordBox HorizontalAlignment="Left" Margin="468.55,468.356,0,0" VerticalAlignment="Top" Width="415.044" Height="44.463"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="468.55,382.92,0,0" VerticalAlignment="Top" Width="415.044" Height="44.463"/>
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="49.847" Margin="468.55,208.512,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415.044"/>
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="49.847" Margin="468.55,296.006,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415.044"/>
+        <TextBlock HorizontalAlignment="Left" Height="95.923" Margin="576.441,74.009,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206.571" FontSize="48" TextDecorations="{x:Null}" Foreground="White"><Run FontWeight="Bold" Text="Register"/></TextBlock>
 
     </Grid>
 </UserControl>
