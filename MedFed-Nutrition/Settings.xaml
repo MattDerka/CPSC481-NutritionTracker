@@ -5,26 +5,50 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
              mc:Ignorable="d" 
-             d:DesignHeight="320.4" d:DesignWidth="518.6">
-    <UserControl.Resources>
-        <Storyboard x:Key="Close">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-    </UserControl.Resources>
-    <Grid x:Name="grid">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
-        <TextBlock HorizontalAlignment="Left" Height="28.533" Margin="231.8,25.659,0,0" TextWrapping="Wrap" Text="Settings" VerticalAlignment="Top" Width="79.2" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Height="17.6" Margin="270,111.05,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="70.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="17.067" Margin="270,143.583,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70.6" Text="Last Name:"/>
-        <Image x:Name="image" Source="arrow.png" Margin="10,25,472.6,273.158" Cursor="Hand"/>
-        <Image Source="pawn.png" Margin="10,78.783,272,64.8"/>
-        <TextBox HorizontalAlignment="Left" Height="17.6" Margin="351.2,111.05,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130.4"/>
-        <TextBox HorizontalAlignment="Left" Height="17.6" Margin="351.2,143.05,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130.4"/>
-        <TextBlock HorizontalAlignment="Left" Height="17.067" Margin="270,181.983,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70.6" Text="Password:"/>
-        <TextBox HorizontalAlignment="Left" Height="17.6" Margin="351.2,181.45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130.4"/>
-        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Height="34.4" Margin="231.8,260.6,0,0" VerticalAlignment="Top" Width="108.8"/>
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" OpacityMask="#FF7C7575"/>
+        <Rectangle HorizontalAlignment="Left" Height="464.75" Margin="200,126.85,0,0" VerticalAlignment="Top" Width="427.2" Stroke="White" RadiusX="10" RadiusY="10">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF122D3C" Offset="0"/>
+                    <GradientStop Color="#FF767676" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="464.75" Margin="660.8,126.85,0,0" VerticalAlignment="Top" Width="427.2" Stroke="White" RadiusX="10" RadiusY="10">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF122D3C" Offset="0"/>
+                    <GradientStop Color="#FF767676" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="96.05" Margin="0,48.4,0,0" TextWrapping="Wrap" Text="Settings" VerticalAlignment="Top" Width="1270" FontSize="48" TextAlignment="Center" Foreground="White" FontWeight="Bold"/>
+
+        <TextBlock HorizontalAlignment="Left" Height="32.317" Margin="281.6,294.483,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="124.6" Foreground="White" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="33.067" Margin="284.4,364.117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121.8" Text="Last Name:" Foreground="White" FontSize="24"/>
+
+        <Image Source="pawn.png" Margin="251.081,152.4,979.6,520.542"/>
+        <Button Content="Choose" HorizontalAlignment="Left" Height="31.692" Margin="281.6,234.596,0,0" VerticalAlignment="Top" Width="57.7" FontSize="16" RenderTransformOrigin="-0.201,4.672"/>
+        <TextBlock HorizontalAlignment="Left" Height="31.692" Margin="360.336,234.596,0,0" TextWrapping="Wrap" Text="Image.jpeg" VerticalAlignment="Top" Width="183.664" Background="White" FontSize="22"/>
+
+        <TextBox HorizontalAlignment="Left" Height="32.317" Margin="281.6,331.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
+        <TextBox HorizontalAlignment="Left" Height="33.067" Margin="281.6,402.184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
+
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Height="42.4" Margin="755.2,638.8,0,0" VerticalAlignment="Top" Width="228.8" Background="#FF9AE75A" FontSize="20" OpacityMask="#FF7C7575" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="calncelButton" Content="Back" HorizontalAlignment="Left" Height="42.4" Margin="305.4,638.8,0,0" VerticalAlignment="Top" Width="228.8" Background="#FFD34242" FontSize="20" Foreground="White" FontWeight="Bold"/>
+
+        <Label Content="Change Password" HorizontalAlignment="Left" Height="61.708" Margin="730,152.4,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Height="31.467" Margin="707.6,249.117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208.2" Foreground="White" FontSize="24"><Run Text="Current "/><Run Text="Password:"/></TextBlock>
+        <PasswordBox HorizontalAlignment="Left" Height="31.467" Margin="707.6,390.901,0,0" VerticalAlignment="Top" Width="316.4"/>
+        <TextBlock HorizontalAlignment="Left" Height="31.467" Margin="707.6,351.984,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208.2" Foreground="White" FontSize="24"><Run Text="New "/><Run Text="Password:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="31.467" Margin="707.6,452.534,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288.2" Foreground="White" FontSize="24"><Run Text="Confirm New "/><Run Text="Password:"/></TextBlock>
+        <PasswordBox HorizontalAlignment="Left" Height="31.467" Margin="707.6,295.333,0,0" VerticalAlignment="Top" Width="316.4"/>
+        <PasswordBox HorizontalAlignment="Left" Height="31.467" Margin="707.6,489.001,0,0" VerticalAlignment="Top" Width="316.4"/>
+        <Label Content="Change Profile" HorizontalAlignment="Left" Height="61.708" Margin="305.4,149.45,0,0" VerticalAlignment="Top" Width="256.4" Foreground="White" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Height="33.067" Margin="284.4,449.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121.8" Text="Email" Foreground="White" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Height="33.067" Margin="281.6,487.401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
+
     </Grid>
 </UserControl>
