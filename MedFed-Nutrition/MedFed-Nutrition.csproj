@@ -158,5 +158,8 @@
   <ItemGroup>
     <Resource Include="pawn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UserIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
