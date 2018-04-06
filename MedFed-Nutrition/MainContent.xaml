@@ -7,14 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1280">
     <Grid x:Name="grid">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
-        <Rectangle Fill="#FFB9B9EE" HorizontalAlignment="Left" Height="46.2" Stroke="Black" VerticalAlignment="Top" Width="98.6" Margin="0,0,-98.6,-46.2"/>
-        <Rectangle Fill="#FFB9CDEE" HorizontalAlignment="Left" Height="46.866" Margin="98.6,-0.666,0,0" Stroke="Black" VerticalAlignment="Top" Width="1181.4"/>
-        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="411.6,14.787,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6" Cursor="Hand" TextDecorations="Underline"/>
-        <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="268.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
+        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
+        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="26.746" Margin="1088.4,10.47,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="73.267" Cursor="Hand" TextDecorations="Underline" Foreground="White" FontSize="20"/>
+        <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="353.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
         <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="47" Margin="83,-1,0,0" VerticalAlignment="Top" Width="87"/>
-        <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="337.6,-0.666,0,0" VerticalAlignment="Top" Width="56.2"/>
-        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="673.467" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="1280"/>
+        <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="487.2,-0.666,0,0" VerticalAlignment="Top" Width="85"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="673.467" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
         <Button x:Name="AddRecipe" Cursor="Hand" Content="Add New Recipe" HorizontalAlignment="Left" Height="46.866" Margin="170,-0.666,0,0" VerticalAlignment="Top" Width="98.6"/>
         <local:AddControl x:Name="addControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
         <Image x:Name="image" Source="setting.png" Margin="1197.867,0,0,673.8"/>
