@@ -6,17 +6,20 @@
              xmlns:local="clr-namespace:MedFed_Nutrition"
              mc:Ignorable="d" d:DesignWidth="1280" Height="673.8">
     <Grid>
-        <Rectangle Fill="#FF5EEEC2" HorizontalAlignment="Left" Height="673.8" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
-        <TextBlock HorizontalAlignment="Left" Height="34.867" Margin="177.865,13.917,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="123.2" FontSize="20"/>
-        <TextBox x:Name="Desc" HorizontalAlignment="Left" Height="356.2" Margin="44,103.031,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367.372"/>
-        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="62.6" Margin="141.332,482.067,0,0" VerticalAlignment="Top" Width="170.963"/>
-        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Height="72.2" Margin="908.335,482.067,0,0" VerticalAlignment="Top" Width="183"/>
-        <TextBlock HorizontalAlignment="Left" Height="63.2" Margin="553.403,307.831,0,0" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" Width="64" FontSize="48"/>
-        <TextBlock HorizontalAlignment="Left" Height="54.781" Margin="869.135,53.784,0,0" TextWrapping="Wrap" Text="Upload Picture" VerticalAlignment="Top" Width="241.4" FontSize="36"/>
-        <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" Height="19.2" Margin="958.68,146.2,0,0" VerticalAlignment="Top" Width="51.2" RenderTransformOrigin="2.782,-0.7"/>
-        <Image x:Name="Image" HorizontalAlignment="Left" Height="220" Margin="830.735,216.467,0,0" VerticalAlignment="Top" Width="328.636"/>
-        <TextBlock HorizontalAlignment="Left" Height="30.384" Margin="17.6,60.2,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Width="45.6" FontSize="20"/>
-        <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="44.247" Margin="81.332,53.784,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140.8" RenderTransformOrigin="0.5,0.5"/>
+        <Rectangle Fill="#FF21313A" Height="673.8" Stroke="Black" Width="1280" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-8,0,0,0"/>
+        <Rectangle x:Name="rectangle" Height="552.813" Stroke="White" Width="438.752" RadiusX="10" RadiusY="10" Margin="423.2,96.987,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF979797" Offset="0"/>
+                    <GradientStop Color="#FF39494B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="67.2" Margin="513.465,12.787,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="266.03" FontSize="48" Foreground="White"/>
+        <TextBox x:Name="Desc" Height="356.2" Margin="460,197.431,0,0" TextWrapping="Wrap" Width="367.372" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Height="30.384" Margin="538.8,131.4,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Width="45.6" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="44.247" Margin="602.532,124.984,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140.8" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221.243" Cursor="Hand" Height="64.014" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="530.8,571.786,0,0"/>
 
     </Grid>
 </UserControl>

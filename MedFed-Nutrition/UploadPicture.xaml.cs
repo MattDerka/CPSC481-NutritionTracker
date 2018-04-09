@@ -1,7 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,21 +17,25 @@ using System.Windows.Shapes;
 namespace MedFed_Nutrition
 {
     /// <summary>
-    /// Interaction logic for AddControl.xaml
+    /// Interaction logic for UploadPicture.xaml
     /// </summary>
-    public partial class AddControl : UserControl
+    public partial class UploadPicture : UserControl
     {
-        public AddControl()
+        public UploadPicture()
         {
             InitializeComponent();
-            this.Save.Click += Save_Click;
+            this.Browse.Click += Browse_Click;
+
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private void Browse_Click(object sender, RoutedEventArgs e)
         {
-            string saveMsg = "Recipe Saved";
-            MessageBox.Show(saveMsg);
+            OpenFileDialog open = new OpenFileDialog();
+            open.Title = "Select a Picture";
+            if (open.ShowDialog() == true)
+            {
+                Image.Source = new BitmapImage(new Uri(open.FileName));
+            }
         }
-
     }
 }

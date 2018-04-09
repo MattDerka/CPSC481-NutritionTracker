@@ -25,10 +25,10 @@ namespace MedFed_Nutrition
             InitializeComponent();
 
             this.search_View.Visibility = Visibility.Hidden;
-            this.addControl.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
+            this.RecipeAddOption.Visibility = Visibility.Hidden;
 
             this.Logout.MouseLeftButtonUp += Logout_MouseLeftButtonUp;
             this.Search.Click += SearchClick;
@@ -46,7 +46,7 @@ namespace MedFed_Nutrition
         private void Goal_Click(object sender, RoutedEventArgs e)
         {
             this.search_View.Visibility = Visibility.Hidden;
-            this.addControl.Visibility = Visibility.Hidden;
+            //this.addControl.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Visible;
         }
@@ -54,7 +54,7 @@ namespace MedFed_Nutrition
         private void NutritionButton_Click(object sender, RoutedEventArgs e)
         {
             this.search_View.Visibility = Visibility.Hidden;
-            this.addControl.Visibility = Visibility.Hidden;
+            this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Visible;
             this.GoalsControl.Visibility = Visibility.Hidden;
         }
@@ -62,7 +62,7 @@ namespace MedFed_Nutrition
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
         {
             this.search_View.Visibility = Visibility.Hidden;
-            this.addControl.Visibility = Visibility.Visible;
+            this.RecipeAddOption.Visibility = Visibility.Visible;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
         }
@@ -70,7 +70,7 @@ namespace MedFed_Nutrition
         private void SearchClick(object sender, RoutedEventArgs e)
         {
             this.search_View.Visibility = Visibility.Visible;
-            this.addControl.Visibility = Visibility.Hidden;
+            this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
         }
@@ -79,7 +79,7 @@ namespace MedFed_Nutrition
         {
             this.Visibility = Visibility.Hidden;
             this.search_View.Visibility = Visibility.Hidden;
-            this.addControl.Visibility = Visibility.Hidden;
+            this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
         }

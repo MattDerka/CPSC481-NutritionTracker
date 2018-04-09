@@ -6,15 +6,22 @@
              xmlns:local="clr-namespace:MedFed_Nutrition"
              mc:Ignorable="d" d:DesignWidth="1280" Height="720">
     <Grid>
-        <Rectangle Fill="#FF9AF1A1" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
-        <TextBlock HorizontalAlignment="Left" Height="58.8" Margin="204.8,61.206,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="149.2" FontSize="48"/>
-        <TextBox x:Name="SeachBox" HorizontalAlignment="Left" Height="57.6" Margin="158.337,272.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195.663"/>
-        <Button x:Name="View" Content="View" HorizontalAlignment="Left" Height="81.2" Margin="158.337,553.6,0,0" VerticalAlignment="Top" Width="195.663"/>
-        <TextBlock HorizontalAlignment="Left" Height="55.4" Margin="879.6,57.603,0,0" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="153.4" FontSize="48"/>
-        <ListBox x:Name="ResultsBox" HorizontalAlignment="Left" Height="496.2" Margin="698.4,138.6,0,0" VerticalAlignment="Top" Width="504"/>
-        <RadioButton Content="Application" HorizontalAlignment="Left" Margin="107.137,494.6,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <RadioButton Content="Online" HorizontalAlignment="Left" Height="29.6" Margin="319.937,494.6,0,0" VerticalAlignment="Top" Width="94.063" FontSize="20"/>
-        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1270"/>
+        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
+        <Rectangle x:Name="rectangle" Height="584.305" Stroke="White" Width="595.552" RadiusX="10" RadiusY="10" Margin="342.4,73.695,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF979797" Offset="0"/>
+                    <GradientStop Color="#FF39494B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Center" Height="67.911" Margin="446.186,89.819,661.395,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.419" FontSize="48" Foreground="White"><Run Text="Search"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="SeachBox" HorizontalAlignment="Center" Height="50.068" Margin="623.605,100.319,379.944,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276.451"/>
+        <ListBox x:Name="ResultsBox" HorizontalAlignment="Center" Height="333.957" Margin="371.567,302.834,379.944,0" VerticalAlignment="Top" Width="528.489" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
+        <RadioButton Content="Application" HorizontalAlignment="Left" Margin="496.835,186.126,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="40.856" Width="132.696"/>
+        <RadioButton Content="Online" HorizontalAlignment="Left" Height="25.437" Margin="680.88,186.126,0,0" VerticalAlignment="Top" Width="80.835" FontSize="20" Foreground="White"/>
+        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1270" d:IsHidden="True"/>
+        <Button x:Name="View" Content="View" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192.31" Cursor="Hand" Height="55.642" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="532.648,231.982,0,0"/>
 
     </Grid>
 </UserControl>

@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="MedFed_Nutrition.UploadPicture"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MedFed_Nutrition"
+             mc:Ignorable="d" 
+             d:DesignHeight="673.8" d:DesignWidth="1280">
+    <Grid>
+        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="673.8" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,0,-1280,-673.8"/>
+        <Rectangle x:Name="rectangle" Height="532.835" Stroke="White" Width="438.752" RadiusX="10" RadiusY="10" Margin="419.2,116.965,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF979797" Offset="0"/>
+                    <GradientStop Color="#FF39494B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="67.981" Margin="471.935,48.984,0,0" TextWrapping="Wrap" Text="Upload Picture" VerticalAlignment="Top" Width="324.2" FontSize="48" Foreground="White"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="233.924" Margin="445.6,228.943,0,0" VerticalAlignment="Top" Width="375.771"/>
+        <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="177.004" Cursor="Hand" Height="51.214" FontSize="20" Background="#FFDA704C" Foreground="White" BorderBrush="{x:Null}" Margin="658.8,550.586,0,0"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="182.534" Cursor="Hand" Height="52.814" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="445.6,548.986,0,0"/>
+
+    </Grid>
+</UserControl>
