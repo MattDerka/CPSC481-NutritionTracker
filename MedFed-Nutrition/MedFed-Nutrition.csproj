@@ -175,5 +175,11 @@
   <ItemGroup>
     <Resource Include="UserIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="setting2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
