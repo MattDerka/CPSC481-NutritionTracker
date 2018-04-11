@@ -36,6 +36,15 @@ namespace MedFed_Nutrition
             this.NutritionButton.Click += NutritionButton_Click;
             this.Goal.Click += Goal_Click;
             this.image.MouseLeftButtonUp += Logout_MouseLeftButtonUp1;
+            this.home.MouseLeftButtonUp += Home_MouseLeftButtonUp;
+        }
+
+        private void Home_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            this.search_View.Visibility = Visibility.Hidden;
+            this.RecipeAddOption.Visibility = Visibility.Hidden;
+            this.calorieANDNutrition.Visibility = Visibility.Hidden;
+            this.GoalsControl.Visibility = Visibility.Hidden;
         }
 
         private void Logout_MouseLeftButtonUp1(object sender, MouseButtonEventArgs e)

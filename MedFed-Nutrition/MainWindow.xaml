@@ -44,7 +44,7 @@
 
         </Canvas>
         <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
-        <local:MainContent x:Name="mainContent" d:IsHidden="True"/>
+        <local:MainContent x:Name="mainContent" Margin="0,0,0,36" d:IsHidden="True"/>
 
     </Grid>
 </Window>
