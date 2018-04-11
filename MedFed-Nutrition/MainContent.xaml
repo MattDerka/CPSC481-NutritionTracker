@@ -15,9 +15,9 @@
         <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="353.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
         <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="47" Margin="83,-1,0,0" VerticalAlignment="Top" Width="87"/>
         <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="487.2,-0.666,0,0" VerticalAlignment="Top" Width="85"/>
-        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="673.467" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="1280" d:IsHidden="True" Grid.RowSpan="2"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="673.467" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="1280" Grid.RowSpan="2" d:IsHidden="True"/>
         <Button x:Name="AddRecipe" Cursor="Hand" Content="Add New Recipe" HorizontalAlignment="Left" Height="46.866" Margin="170,-0.666,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <Image x:Name="image" Source="setting.png" Margin="1197.867,0,0,668.8"/>
+        <Image x:Name="image" Source="setting.png" Margin="1197.867,0,0,678.467"/>
         <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="0,46.2,0,-46.2" Grid.RowSpan="2" d:IsHidden="True"/>
         <local:GoalsControl x:Name="GoalsControl" Margin="0,46.2,0,-46.2" Grid.RowSpan="2" d:IsHidden="True"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="1280" Grid.RowSpan="2" d:IsHidden="True"/>

@@ -11,7 +11,7 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Height="75.296" Margin="487.923,97.399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321.976" FontSize="48" Foreground="White"><Run FontWeight="Bold" Text="Calorie Needs"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="75.296" Margin="487.923,97.399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321.976" FontSize="48" Foreground="White" Text="Calorie Needs"/>
         <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="231.758,229.287,0,0" TextWrapping="Wrap" Text="Proteins" VerticalAlignment="Top" Width="123.661" FontSize="36" Foreground="White"/>
         <Path HorizontalAlignment="Left" Height="276.755" Margin="152.203,291.227,0,0" VerticalAlignment="Top" Width="267.316" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill" Clip="M-33.703,137.049 L291.797,137.049 L291.797,295.773 L-33.703,295.773 z" RenderTransformOrigin="0.5,0.5">
             <Path.RenderTransform>

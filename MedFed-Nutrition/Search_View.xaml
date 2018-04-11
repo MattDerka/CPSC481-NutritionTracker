@@ -20,8 +20,8 @@
         <ListBox x:Name="ResultsBox" HorizontalAlignment="Center" Height="333.957" Margin="371.567,302.834,379.944,0" VerticalAlignment="Top" Width="528.489" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
         <RadioButton Content="Application" HorizontalAlignment="Left" Margin="496.835,186.126,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="40.856" Width="132.696"/>
         <RadioButton Content="Online" HorizontalAlignment="Left" Height="25.437" Margin="680.88,186.126,0,0" VerticalAlignment="Top" Width="80.835" FontSize="20" Foreground="White"/>
-        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1270" d:IsHidden="True"/>
         <Button x:Name="View" Content="View" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192.31" Cursor="Hand" Height="55.642" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="532.648,231.982,0,0"/>
+        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1270" d:IsHidden="True"/>
 
     </Grid>
 </UserControl>
