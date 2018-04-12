@@ -20,7 +20,7 @@
         <local:GoalsControl x:Name="GoalsControl" Margin="0,60.6,0,-46.2" Foreground="{x:Null}" d:IsHidden="True"/>
         <local:RecipeAddOption x:Name="RecipeAddOption" HorizontalAlignment="Left" Height="657.8" Margin="0,62.2,0,0" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
         <Path Data="M109.6,51.2 L1521.515,46.533" Fill="White" HorizontalAlignment="Left" Height="4.667" Margin="0,57.533,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="1280"/>
-        <Image x:Name="image" Source="setting2.png" Margin="1208.8,14,10.4,671.8" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="image" Source="setting2.png" Cursor="Hand" Margin="1208.8,14,10.4,671.8" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -30,10 +30,10 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="home" Source="home_icon.png" Margin="20.8,3.15,1140,649.8"></Image>
-        <Image Source="481- MainPageGraph.png" Margin="46.8,179.6,62,-18"/>
-        <Image Source="481- MainPageGraph2.png" Margin="46.8,179.6,62,-18" d:IsHidden="True"/>
-        <Image Source="481- MainPageGraph3.png" d:IsHidden="True" Margin="46.8,179.6,62,-18"></Image>
+        <Image x:Name="home" Cursor="Hand" Source="home_icon.png" Margin="20.8,3.15,1140,649.8"></Image>
+        <Image x:Name="graph1" Source="481- MainPageGraph.png" Margin="20.8,86.8,672.933,348.887"/>
+        <Image x:Name="graph2" Source="481- MainPageGraph2.png" Margin="20.8,366.513,633.6,50.744"/>
+        <Image x:Name="graph3" Source="481- MainPageGraph3.png" Margin="552.696,366.513,0,50.744"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="647.467" Margin="0,62.533,-8.533,0" VerticalAlignment="Top" Width="1288.533" d:IsHidden="True"/>
     </Grid>
 </UserControl>

@@ -38,6 +38,8 @@ namespace MedFed_Nutrition
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
+            //UsernameString = Username.Text;
+            //Pass = Password.Text;
             this.mainContent.Visibility = Visibility.Visible;
         }
 
@@ -45,5 +47,9 @@ namespace MedFed_Nutrition
         {
 
         }
+
+        //public static string UsernameString { get; private set; }
+
+        //public static string Pass { get; private set; }
     }
 }

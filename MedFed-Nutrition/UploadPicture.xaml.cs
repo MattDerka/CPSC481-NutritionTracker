@@ -25,7 +25,12 @@ namespace MedFed_Nutrition
         {
             InitializeComponent();
             this.Browse.Click += Browse_Click;
+            this.Add.Click += Add_Click;
+        }
 
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
         }
 
         private void Browse_Click(object sender, RoutedEventArgs e)
