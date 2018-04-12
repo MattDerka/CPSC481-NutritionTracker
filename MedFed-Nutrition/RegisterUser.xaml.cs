@@ -34,6 +34,7 @@ namespace MedFed_Nutrition
             string fName = FirstName.Text;
             string lName = LastName.Text;
             string password = Password.Password.ToString();
+
             users.Add(new Tuple<string, string, string>(fName, lName, password));
             users.ForEach(Console.WriteLine);
 

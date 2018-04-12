@@ -40,22 +40,30 @@ namespace MedFed_Nutrition
         private void RegButton_Click(object sender, RoutedEventArgs e)
         {
             this.registerUser.Visibility = Visibility.Visible;
+            passwordError.Text = String.Empty;
         }
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
             string UsernameString = Username.Text;
             string Pass = passwordBox.Password.ToString();
+            bool check = false;
 
             foreach(Tuple<string, string, string> u in users)
             {
                 if(u.Item1 == UsernameString && u.Item3 == Pass)
                 {
+                    passwordError.Text = String.Empty;
+                    Username.Text = String.Empty;
+                    passwordBox.Clear();
+                    check = true;
                     this.mainContent.Visibility = Visibility.Visible;
                 }
             }
-            passwordError.Text = "Incorrect username or password";
-
+            if (check == false)
+            {
+                passwordError.Text = "Incorrect username or password";
+            }
         }
 
         private void Username_TextChanged(object sender, TextChangedEventArgs e)
