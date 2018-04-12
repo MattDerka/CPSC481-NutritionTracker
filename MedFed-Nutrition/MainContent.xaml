@@ -31,6 +31,9 @@
             </Image.RenderTransform>
         </Image>
         <Image x:Name="home" Source="home_icon.png" Margin="20.8,3.15,1140,649.8"></Image>
+        <Image Source="481- MainPageGraph.png" Margin="46.8,179.6,62,-18"/>
+        <Image Source="481- MainPageGraph2.png" Margin="46.8,179.6,62,-18" d:IsHidden="True"/>
+        <Image Source="481- MainPageGraph3.png" d:IsHidden="True" Margin="46.8,179.6,62,-18"></Image>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="647.467" Margin="0,62.533,-8.533,0" VerticalAlignment="Top" Width="1288.533" d:IsHidden="True"/>
     </Grid>
 </UserControl>
