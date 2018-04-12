@@ -35,5 +35,8 @@
         <Image x:Name="graph2" Source="481- MainPageGraph2.png" Margin="20.8,366.513,633.6,50.744"/>
         <Image x:Name="graph3" Source="481- MainPageGraph3.png" Margin="552.696,366.513,0,50.744"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="647.467" Margin="0,62.533,-8.533,0" VerticalAlignment="Top" Width="1288.533" d:IsHidden="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="35.2" Margin="665.267,105.6,0,0" TextWrapping="Wrap" Text="Welcome:" VerticalAlignment="Top" Width="107.533" FontSize="22" Foreground="White"/>
+        <Label x:Name="Fname" Content="" HorizontalAlignment="Left" Margin="804.9,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
+        <Label x:Name="lName" Content="" HorizontalAlignment="Left" Margin="964.5,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
     </Grid>
 </UserControl>

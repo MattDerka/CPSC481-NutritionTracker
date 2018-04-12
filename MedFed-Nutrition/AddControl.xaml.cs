@@ -33,6 +33,7 @@ namespace MedFed_Nutrition
             string saveMsg = "Recipe Saved";
             MessageBox.Show(saveMsg);
             this.Visibility = Visibility.Hidden;
+            
         }
 
     }

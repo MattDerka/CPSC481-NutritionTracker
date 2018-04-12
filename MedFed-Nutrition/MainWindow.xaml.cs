@@ -25,6 +25,8 @@ namespace MedFed_Nutrition
     {
         List<Tuple<string, string, string>> users = new List<Tuple<string, string, string>>();
 
+        public string userName { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace MedFed_Nutrition
 
             users.Add(new Tuple<string, string, string>("matthew", "kanderka", "jack"));
             users.Add(new Tuple<string, string, string>("jim", "joe", "jj"));
+
         }
 
         private void RegButton_Click(object sender, RoutedEventArgs e)
@@ -45,19 +48,21 @@ namespace MedFed_Nutrition
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
-            string UsernameString = Username.Text;
+            string userName = Username.Text;
             string Pass = passwordBox.Password.ToString();
             bool check = false;
 
             foreach(Tuple<string, string, string> u in users)
             {
-                if(u.Item1 == UsernameString && u.Item3 == Pass)
+                if(u.Item1 == userName && u.Item3 == Pass)
                 {
+                    this.mainContent.Fname.Content = userName;
                     passwordError.Text = String.Empty;
                     Username.Text = String.Empty;
                     passwordBox.Clear();
                     check = true;
                     this.mainContent.Visibility = Visibility.Visible;
+                   
                 }
             }
             if (check == false)

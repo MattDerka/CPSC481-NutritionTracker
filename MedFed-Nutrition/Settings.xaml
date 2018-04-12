@@ -32,8 +32,8 @@
         <Button Content="Choose" HorizontalAlignment="Left" Height="31.692" Margin="288,205.796,0,0" VerticalAlignment="Top" Width="57.7" FontSize="16" RenderTransformOrigin="-0.201,4.672"/>
         <TextBlock HorizontalAlignment="Left" Height="31.692" Margin="366.736,205.796,0,0" TextWrapping="Wrap" Text="Image.jpeg" VerticalAlignment="Top" Width="183.664" Background="White" FontSize="22"/>
 
-        <TextBox HorizontalAlignment="Left" Height="32.317" Margin="288,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
-        <TextBox HorizontalAlignment="Left" Height="33.067" Margin="288,373.384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
+        <TextBox x:Name="fNameTxt" HorizontalAlignment="Left" Height="32.317" Margin="288,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
+        <TextBox x:Name="lNameTxt" HorizontalAlignment="Left" Height="33.067" Margin="288,373.384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
 
         <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Height="42.4" Margin="736.4,546,0,0" VerticalAlignment="Top" Width="228.8" Background="#FF9AE75A" FontSize="20" OpacityMask="#FF7C7575" Foreground="White" FontWeight="Bold"/>
         <Button x:Name="CancelButton" Content="Back" HorizontalAlignment="Left" Height="42.4" Margin="286.6,546,0,0" VerticalAlignment="Top" Width="228.8" Background="#FFD34242" FontSize="20" Foreground="White" FontWeight="Bold"/>

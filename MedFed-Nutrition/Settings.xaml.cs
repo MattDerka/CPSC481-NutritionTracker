@@ -13,17 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MedFed_Nutrition
 {
-    /// <summary>
-    /// Interaction logic for Settings.xaml
-    /// </summary>
+  
+
     public partial class Settings : UserControl
     {
+
         public Settings()
         {
             InitializeComponent();
             this.CancelButton.Click += CancelButton_Click;
+            this.SaveButton.Click += SaveButton_Click;
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
