@@ -21,6 +21,9 @@ namespace MedFed_Nutrition
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+
     public partial class MainWindow : Window
     {
         List<Tuple<string, string, string>> users = new List<Tuple<string, string, string>>();
@@ -37,7 +40,6 @@ namespace MedFed_Nutrition
 
             users.Add(new Tuple<string, string, string>("matthew", "kanderka", "jack"));
             users.Add(new Tuple<string, string, string>("jim", "joe", "jj"));
-
         }
 
         private void RegButton_Click(object sender, RoutedEventArgs e)
@@ -75,6 +77,7 @@ namespace MedFed_Nutrition
         {
 
         }
+        
 
         //public static string UsernameString { get; private set; }
 

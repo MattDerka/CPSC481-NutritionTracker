@@ -51,6 +51,9 @@ namespace MedFed_Nutrition
             this.graph1.Visibility = Visibility.Visible;
             this.graph2.Visibility = Visibility.Visible;
             this.graph3.Visibility = Visibility.Visible;
+            this.Fname.Visibility = Visibility.Visible;
+            this.welcome.Visibility = Visibility.Visible;
+
         }
 
         private void Logout_MouseLeftButtonUp1(object sender, MouseButtonEventArgs e)
@@ -67,6 +70,9 @@ namespace MedFed_Nutrition
             this.graph1.Visibility = Visibility.Hidden;
             this.graph2.Visibility = Visibility.Hidden;
             this.graph3.Visibility = Visibility.Hidden;
+            this.Fname.Visibility = Visibility.Hidden;
+            this.welcome.Visibility = Visibility.Hidden;
+
         }
 
         private void NutritionButton_Click(object sender, RoutedEventArgs e)
@@ -78,6 +84,8 @@ namespace MedFed_Nutrition
             this.graph1.Visibility = Visibility.Hidden;
             this.graph2.Visibility = Visibility.Hidden;
             this.graph3.Visibility = Visibility.Hidden;
+            this.Fname.Visibility = Visibility.Hidden;
+            this.welcome.Visibility = Visibility.Hidden;
         }
 
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
@@ -89,6 +97,8 @@ namespace MedFed_Nutrition
             this.graph1.Visibility = Visibility.Hidden;
             this.graph2.Visibility = Visibility.Hidden;
             this.graph3.Visibility = Visibility.Hidden;
+            this.Fname.Visibility = Visibility.Hidden;
+            this.welcome.Visibility = Visibility.Hidden;
         }
 
         private void SearchClick(object sender, RoutedEventArgs e)
@@ -100,6 +110,8 @@ namespace MedFed_Nutrition
             this.graph1.Visibility = Visibility.Hidden;
             this.graph2.Visibility = Visibility.Hidden;
             this.graph3.Visibility = Visibility.Hidden;
+            this.Fname.Visibility = Visibility.Hidden;
+            this.welcome.Visibility = Visibility.Hidden;
         }
 
         private void Logout_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -109,6 +121,7 @@ namespace MedFed_Nutrition
             this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
+
         }
     }
 }

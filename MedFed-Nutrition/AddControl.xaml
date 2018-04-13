@@ -15,11 +15,11 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Height="67.2" Margin="513.465,12.787,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="266.03" FontSize="48" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="67.2" Margin="538.8,12.787,0,0" TextWrapping="Wrap" Text="Type Recipe" VerticalAlignment="Top" Width="266.03" FontSize="48" Foreground="White"/>
         <TextBox x:Name="Desc" Height="356.2" Margin="460,197.431,0,0" TextWrapping="Wrap" Width="367.372" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Height="30.384" Margin="538.8,131.4,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Width="45.6" FontSize="20" Foreground="White"/>
         <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="44.247" Margin="602.532,124.984,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140.8" RenderTransformOrigin="0.5,0.5"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221.243" Cursor="Hand" Height="64.014" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="530.8,571.786,0,0"/>
-
+        <Image x:Name="arrow" Cursor="Hand" Source="arrow2.png" Margin="446.4,29.6,753.079,601.813"></Image>
     </Grid>
 </UserControl>

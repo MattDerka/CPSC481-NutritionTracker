@@ -34,11 +34,11 @@
                     </Rectangle.Fill>
                 </Rectangle>
                 <Button x:Name="SignIn" Content="Sign In" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Canvas.Left="526.667" Canvas.Top="420.688" Cursor="Hand" Height="37.614" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}"/>
-                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="270" Canvas.Left="526.667" Canvas.Top="352.76" Height="34.947"/>
+                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="270" Canvas.Left="526.667" Canvas.Top="352.76" Height="34.947" FontSize="22"/>
                 <TextBlock x:Name="Password" Canvas.Left="528.934" TextWrapping="Wrap" Text="Password:" Canvas.Top="319.48" Height="33.28" Width="100" FontSize="20" Foreground="White"/>
                 <Button x:Name="RegButton" Content="Register" HorizontalAlignment="Left" Height="37.614" VerticalAlignment="Top" Width="123" Canvas.Left="673.667" Canvas.Top="420.688" Cursor="Hand" FontSize="20" Background="#FF636DC7" Foreground="White" BorderBrush="{x:Null}"/>
                 <TextBlock x:Name="UsernameLabel" Height="21.333" TextWrapping="Wrap" Text="Username:" Canvas.Top="244.867" Width="118.733" RenderTransformOrigin="0.574,0.5" Canvas.Left="528.934" FontSize="20" Foreground="White"/>
-                <TextBox x:Name="Username" Height="36.28" Canvas.Left="526.667" TextWrapping="Wrap" Canvas.Top="283.2" Width="270"/>
+                <TextBox x:Name="Username" Height="36.28" Canvas.Left="526.667" TextWrapping="Wrap" Canvas.Top="283.2" Width="270" FontSize="22"/>
                 <Image Source="UserIcon.png" Height="78.571" Canvas.Left="621" Canvas.Top="149.296" Width="78.571" RenderTransformOrigin="0.293,0.531"/>
                 <TextBlock x:Name="passwordError" Height="21.555" Canvas.Left="557.333" TextWrapping="Wrap" Canvas.Top="394.133" Width="208" TextAlignment="Center" Foreground="Red"/>
             </Canvas>

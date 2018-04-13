@@ -20,6 +20,7 @@ namespace MedFed_Nutrition
 
     public partial class Settings : UserControl
     {
+        public string hello = "Hello";
 
         public Settings()
         {
@@ -30,7 +31,7 @@ namespace MedFed_Nutrition
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            
+          
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
