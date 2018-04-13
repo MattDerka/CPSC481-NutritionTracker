@@ -10,6 +10,22 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="710" Stroke="Black" VerticalAlignment="Top" Width="1280"/>
+        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="211.397" Stroke="White" VerticalAlignment="Top" Width="341.152" RadiusX="10" RadiusY="10" Margin="701.348,101.536,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF979797" Offset="0"/>
+                    <GradientStop Color="#FF39494B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Height="35.2" Margin="744.767,105.6,0,0" TextWrapping="Wrap" Text="Welcome:" VerticalAlignment="Top" Width="107.533" FontSize="22" Foreground="White"/>
+        <Label x:Name="Fname" Content="" HorizontalAlignment="Left" Margin="859.867,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
+        <TextBlock x:Name="welcome_Copy" HorizontalAlignment="Left" Height="35.2" Margin="795.367,148.8,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="47.933" FontSize="22" Foreground="White"/>
+        <TextBlock x:Name="welcome_Copy1" HorizontalAlignment="Left" Height="35.2" Margin="728.7,196.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123.6" FontSize="22" Foreground="White"><Run Text="Weight"/><Run Text="("/><Run Text="Kg"/><Run Text=")"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="welcome_Copy2" HorizontalAlignment="Left" Height="35.2" Margin="859.867,148.8,0,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="27.9" FontSize="22" Foreground="White"/>
+        <TextBlock x:Name="welcome_Copy3" HorizontalAlignment="Left" Height="35.2" Margin="859.867,196.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52.733" FontSize="22" Foreground="White" Text="78.5"/>
+        <TextBlock x:Name="welcome_Copy4" HorizontalAlignment="Left" Height="35.2" Margin="773.1,250.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79.2" FontSize="22" Foreground="White" Text="Height:"/>
+        <TextBlock x:Name="welcome_Copy5" HorizontalAlignment="Left" Height="35.2" Margin="859.867,250.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52.733" FontSize="22" Foreground="White" Text="176" RenderTransformOrigin="0.533,1.151"/>
         <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="26.746" Margin="1128.4,15.806,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73.267" Cursor="Hand" TextDecorations="{x:Null}" Foreground="White" FontSize="20" Text="Logout"/>
         <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="52.766" Margin="488.867,7.834,0,0" VerticalAlignment="Top" Width="144.2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="20"/>
         <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="53.766" Margin="140,6.834,0,0" VerticalAlignment="Top" Width="144.266" Foreground="White" BorderBrush="{x:Null}" FontSize="20" Background="{x:Null}"/>
@@ -35,8 +51,5 @@
         <Image x:Name="graph2" Source="481- MainPageGraph2.png" Margin="20.8,366.513,633.6,50.744"/>
         <Image x:Name="graph3" Source="481- MainPageGraph3.png" Margin="552.696,366.513,0,50.744"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="647.467" Margin="0,62.533,-8.533,0" VerticalAlignment="Top" Width="1288.533" d:IsHidden="True"/>
-        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Height="35.2" Margin="665.267,105.6,0,0" TextWrapping="Wrap" Text="Welcome:" VerticalAlignment="Top" Width="107.533" FontSize="22" Foreground="White"/>
-        <Label x:Name="Fname" Content="" HorizontalAlignment="Left" Margin="804.9,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
-        <Label x:Name="lName" Content="" HorizontalAlignment="Left" Margin="964.5,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
     </Grid>
 </UserControl>

@@ -35,8 +35,7 @@
         <TextBox x:Name="fNameTxt" HorizontalAlignment="Left" Height="32.317" Margin="288,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
         <TextBox x:Name="lNameTxt" HorizontalAlignment="Left" Height="33.067" Margin="288,373.384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262.4"/>
 
-        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Height="42.4" Margin="736.4,546,0,0" VerticalAlignment="Top" Width="228.8" Background="#FF9AE75A" FontSize="20" OpacityMask="#FF7C7575" Foreground="White" FontWeight="Bold"/>
-        <Button x:Name="CancelButton" Content="Back" HorizontalAlignment="Left" Height="42.4" Margin="286.6,546,0,0" VerticalAlignment="Top" Width="228.8" Background="#FFD34242" FontSize="20" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Height="42.4" Margin="526.8,538.2,0,0" VerticalAlignment="Top" Width="228.8" Background="#FF9AE75A" FontSize="20" OpacityMask="#FF7C7575" Foreground="White" FontWeight="Bold"/>
 
         <Label Content="Change Password" HorizontalAlignment="Left" Height="61.708" Margin="736.4,123.6,0,0" VerticalAlignment="Top" Width="294" Foreground="White" FontSize="36"/>
         <TextBlock HorizontalAlignment="Left" Height="31.467" Margin="714,220.317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208.2" Foreground="White" FontSize="24"><Run Text="Current "/><Run Text="Password:"/></TextBlock>

@@ -25,7 +25,6 @@ namespace MedFed_Nutrition
         public Settings()
         {
             InitializeComponent();
-            this.CancelButton.Click += CancelButton_Click;
             this.SaveButton.Click += SaveButton_Click;
         }
 
@@ -34,10 +33,6 @@ namespace MedFed_Nutrition
           
         }
 
-        private void CancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Visibility = Visibility.Hidden;
-        }
 
         private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {

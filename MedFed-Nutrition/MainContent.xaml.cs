@@ -53,6 +53,8 @@ namespace MedFed_Nutrition
             this.graph3.Visibility = Visibility.Visible;
             this.Fname.Visibility = Visibility.Visible;
             this.welcome.Visibility = Visibility.Visible;
+            this.settings.Visibility = Visibility.Hidden;
+
 
         }
 
@@ -72,6 +74,7 @@ namespace MedFed_Nutrition
             this.graph3.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
+            this.settings.Visibility = Visibility.Hidden;
 
         }
 
@@ -86,6 +89,7 @@ namespace MedFed_Nutrition
             this.graph3.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
+            this.settings.Visibility = Visibility.Hidden;
         }
 
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
@@ -99,6 +103,7 @@ namespace MedFed_Nutrition
             this.graph3.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
+            this.settings.Visibility = Visibility.Hidden;
         }
 
         private void SearchClick(object sender, RoutedEventArgs e)
@@ -112,6 +117,8 @@ namespace MedFed_Nutrition
             this.graph3.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
+            this.settings.Visibility = Visibility.Hidden;
+
         }
 
         private void Logout_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
