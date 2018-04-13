@@ -32,6 +32,8 @@ namespace MedFed_Nutrition
             this.graph1.Visibility = Visibility.Visible;
             this.graph2.Visibility = Visibility.Visible;
             this.graph3.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Visible;
+
 
             this.Logout.MouseLeftButtonUp += Logout_MouseLeftButtonUp;
             this.Search.Click += SearchClick;
@@ -54,8 +56,9 @@ namespace MedFed_Nutrition
             this.Fname.Visibility = Visibility.Visible;
             this.welcome.Visibility = Visibility.Visible;
             this.settings.Visibility = Visibility.Hidden;
-
-
+            this.Fname_Copy.Visibility = Visibility.Visible;
+            this.Fname_Copy1.Visibility = Visibility.Visible;
+            this.Fname_Copy2.Visibility = Visibility.Visible;
         }
 
         private void Logout_MouseLeftButtonUp1(object sender, MouseButtonEventArgs e)
@@ -75,7 +78,9 @@ namespace MedFed_Nutrition
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
-
+            this.Fname_Copy.Visibility = Visibility.Hidden;
+            this.Fname_Copy1.Visibility = Visibility.Hidden;
+            this.Fname_Copy2.Visibility = Visibility.Hidden;
         }
 
         private void NutritionButton_Click(object sender, RoutedEventArgs e)
@@ -90,6 +95,9 @@ namespace MedFed_Nutrition
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
+            this.Fname_Copy.Visibility = Visibility.Hidden;
+            this.Fname_Copy1.Visibility = Visibility.Hidden;
+            this.Fname_Copy2.Visibility = Visibility.Hidden;
         }
 
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
@@ -104,6 +112,9 @@ namespace MedFed_Nutrition
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
+            this.Fname_Copy.Visibility = Visibility.Hidden;
+            this.Fname_Copy1.Visibility = Visibility.Hidden;
+            this.Fname_Copy2.Visibility = Visibility.Hidden;
         }
 
         private void SearchClick(object sender, RoutedEventArgs e)
@@ -118,7 +129,9 @@ namespace MedFed_Nutrition
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
-
+            this.Fname_Copy.Visibility = Visibility.Hidden;
+            this.Fname_Copy1.Visibility = Visibility.Hidden;
+            this.Fname_Copy2.Visibility = Visibility.Hidden;
         }
 
         private void Logout_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

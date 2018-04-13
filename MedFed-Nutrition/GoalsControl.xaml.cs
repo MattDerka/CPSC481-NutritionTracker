@@ -23,6 +23,13 @@ namespace MedFed_Nutrition
         public GoalsControl()
         {
             InitializeComponent();
+            this.Save.Click += Save_Click;
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            string printMsg = "Saved Info";
+            MessageBox.Show(printMsg);
         }
     }
 }

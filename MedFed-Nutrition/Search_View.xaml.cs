@@ -20,13 +20,14 @@ namespace MedFed_Nutrition
     /// </summary>
     public partial class Search_View : UserControl
     {
-        List<string> recipes = new List<string>();
+        //public List<string> Recipes { get; set; }
+
+        public List<string> recipes = new List<string>();
 
         public Search_View()
         {
             InitializeComponent();
             this.Recipe.Visibility = Visibility.Hidden;
-
 
             recipes.Add("Chicken Tenders");
             recipes.Add("Chicken Breast");
@@ -36,6 +37,7 @@ namespace MedFed_Nutrition
             View.Click += View_Click;
             ResultsBox.MouseDoubleClick += ResultsBox_MouseDoubleClick;
         }
+
 
         private void ResultsBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
@@ -51,6 +53,8 @@ namespace MedFed_Nutrition
             ResultsBox.Items.Clear();
 
             string recipeSearch = SeachBox.Text;
+
+
 
             foreach(string r in recipes)
             {

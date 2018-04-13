@@ -38,6 +38,22 @@ namespace MedFed_Nutrition
             users.Add(new Tuple<string, string, string>("matthew", "kanderka", "jack"));
             users.Add(new Tuple<string, string, string>("jim", "joe", "jj"));
 
+            this.mainContent.RecipeAddOption.AddControl.Save.Click += Save_Click;
+            this.mainContent.GoalsControl.Save.Click += Save_Click1;
+
+        }
+
+        private void Save_Click1(object sender, RoutedEventArgs e)
+        {
+            this.mainContent.Fname_Copy.Content = this.mainContent.GoalsControl.ageInput.Text;
+            this.mainContent.Fname_Copy1.Content = this.mainContent.GoalsControl.weightInput.Text;
+            this.mainContent.Fname_Copy2.Content = this.mainContent.GoalsControl.heightInput.Text;
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            string t = this.mainContent.RecipeAddOption.AddControl.TitleBox.Text;
+            this.mainContent.search_View.recipes.Add(t);
         }
 
         private void RegButton_Click(object sender, RoutedEventArgs e)
@@ -76,8 +92,5 @@ namespace MedFed_Nutrition
 
         }
 
-        //public static string UsernameString { get; private set; }
-
-        //public static string Pass { get; private set; }
     }
 }

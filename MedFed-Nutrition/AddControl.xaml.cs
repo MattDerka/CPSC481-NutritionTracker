@@ -22,6 +22,8 @@ namespace MedFed_Nutrition
     /// </summary>
     public partial class AddControl : UserControl
     {
+        public string RecipeName { get; set; }
+
         public AddControl()
         {
             InitializeComponent();
@@ -38,6 +40,7 @@ namespace MedFed_Nutrition
         {
             string saveMsg = "Recipe Saved";
             MessageBox.Show(saveMsg);
+            RecipeName = TitleBox.Text;
             this.Visibility = Visibility.Hidden; 
         }
 
