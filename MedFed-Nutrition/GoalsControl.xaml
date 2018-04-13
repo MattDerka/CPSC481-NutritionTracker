@@ -4,16 +4,54 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
-             mc:Ignorable="d" d:DesignWidth="518.6" Height="271.667">
+             mc:Ignorable="d" d:DesignWidth="1280" Height="720">
     <Grid>
-        <Rectangle Fill="#FFEA924F" HorizontalAlignment="Left" Height="271.667" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.867" Margin="110,10,0,0" TextWrapping="Wrap" Text="Set Calorie Goal" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.867" Margin="338.8,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81.6" FontSize="16"><Run Text="Set "/><Run Text="Macros"/></TextBlock>
-        <Button x:Name="Submit" Content="Save" HorizontalAlignment="Left" Height="20.6" Margin="223.8,228.267,0,0" VerticalAlignment="Top" Width="68"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="302.4,53.667,0,0" TextWrapping="Wrap" Text="Protein:" VerticalAlignment="Top" Width="52.2" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="302.4,83.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52.2" FontSize="14"><Run Text="Carbs"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="302.4,115.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32.2" FontSize="14" Text="Fats:"/>
-        <TextBlock HorizontalAlignment="Left" Height="47.2" Margin="89,53.667,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="141"/>
+        <Rectangle HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0" RenderTransformOrigin="0.498,0.492">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF0A2E34" Offset="1"/>
+                    <GradientStop Color="#FF38717F"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <Rectangle x:Name="rectangle_Copy" Height="339.559" Stroke="White" Width="454.643" RadiusX="10" RadiusY="10" Margin="86.8,164.005,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF979797" Offset="0"/>
+                    <GradientStop Color="#FF39494B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="rectangle" Height="335.906" Stroke="White" Width="604.063" RadiusX="10" RadiusY="10" Margin="564.935,167.658,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF979797" Offset="0"/>
+                    <GradientStop Color="#FF39494B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="87.285" Margin="8.031,48.058,0,0" TextWrapping="Wrap" Text="Tell us about yourself" VerticalAlignment="Top" Width="615.2" FontSize="48" TextAlignment="Center" Foreground="White"/>
+
+        <Label x:Name="ageLabel" Content="Age:" HorizontalAlignment="Left" Margin="107.234,190.876,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
+        <Label x:Name="weightLabel" Content="Weight (kg):" HorizontalAlignment="Left" Margin="104.426,280.797,0,381.319" FontSize="36" Foreground="White"/>
+        <Label x:Name="heightLabel" Content="Height (cm):" HorizontalAlignment="Left" Margin="102.542,0,0,282.586" Foreground="White" FontSize="36" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="ageInput" HorizontalAlignment="Left" Height="52.883" Margin="358.399,190.877,0,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="107.2" FontSize="36"/>
+        <TextBox x:Name="weightInput" HorizontalAlignment="Left" Margin="358.4,285.798,0,381.319" TextWrapping="Wrap" Text="78.5" Width="158.4" FontSize="36"/>
+        <TextBox x:Name="heightInput" HorizontalAlignment="Left" Margin="358.4,0,0,282.588" TextWrapping="Wrap" Text="176" Width="158.4" FontSize="36" Height="52.883" VerticalAlignment="Bottom"/>
+        <TextBlock Height="87.285" Margin="555.378,50.027,115.222,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" TextAlignment="Center" Foreground="White"><Run Text="D"/><Run Text="aily"/><Run Text=" recommendations"/></TextBlock>
+
+        <Label x:Name="caloriesLabel" Content="Calories:" Margin="610.506,180.876,438.044,0" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
+        <TextBox x:Name="caloriesOutput" HorizontalAlignment="Right" Height="52.883" Margin="0,180.876,137.229,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="160" FontSize="36"/>
+        <Label x:Name="fatLabel" Content="Fat:" Margin="610.506,266.797,415.644,395.319" FontSize="36" Foreground="White"/>
+        <TextBox x:Name="fatOutput" HorizontalAlignment="Right" Margin="0,266.797,137.229,400.32" TextWrapping="Wrap" Text="21" Width="160" FontSize="36"/>
+        <Label x:Name="carbLabel" Content="Carbohydrates:" Margin="610.506,348.492,415.644,313.624" FontSize="36" Foreground="White" d:LayoutOverrides="Height"/>
+        <TextBox x:Name="carbOutput" HorizontalAlignment="Right" Margin="0,352.492,137.229,314.625" TextWrapping="Wrap" Text="21" Width="160" FontSize="36"/>
+        <Label x:Name="proteinLabel" Content="Protein:" Margin="610.506,0,415.644,235.14" FontSize="36" Foreground="White" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="proteinOutput" HorizontalAlignment="Right" Margin="0,0,137.229,235.141" TextWrapping="Wrap" Text="21" Width="160" FontSize="36" Height="52.883" VerticalAlignment="Bottom"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="291.849" Cursor="Hand" Height="84.442" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="466.434,539.656,0,0"/>
+
 
     </Grid>
 </UserControl>

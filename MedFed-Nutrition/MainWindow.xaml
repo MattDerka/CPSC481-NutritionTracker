@@ -23,12 +23,18 @@
     <Grid Width="1280" Height="720">
 
         <Canvas x:Name="SplashCanvas" Margin="-10,0,10,0" Width="1280" Height="720">
-            <Canvas Height="720" Width="1280" RenderTransformOrigin="0.519,0.46" Background="#FF21313A">
+            <Canvas Height="720" Width="1280" RenderTransformOrigin="0.519,0.46">
+                <Canvas.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF38717F" Offset="0"/>
+                        <GradientStop Color="#FF0A2E34" Offset="1"/>
+                    </RadialGradientBrush>
+                </Canvas.Background>
 
                 <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="376.833" Stroke="White" VerticalAlignment="Top" Width="341.152" Canvas.Left="492" Canvas.Top="136.5" RadiusX="10" RadiusY="10">
                     <Rectangle.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF979797" Offset="0"/>
+                            <GradientStop Color="#FF6E8C90" Offset="0"/>
                             <GradientStop Color="#FF39494B" Offset="1"/>
                         </LinearGradientBrush>
                     </Rectangle.Fill>
@@ -40,10 +46,12 @@
                 <TextBlock x:Name="UsernameLabel" Height="21.333" TextWrapping="Wrap" Text="Username:" Canvas.Top="244.867" Width="118.733" RenderTransformOrigin="0.574,0.5" Canvas.Left="528.934" FontSize="20" Foreground="White"/>
                 <TextBox x:Name="Username" Height="36.28" Canvas.Left="526.667" TextWrapping="Wrap" Canvas.Top="283.2" Width="270"/>
                 <Image Source="UserIcon.png" Height="78.571" Canvas.Left="621" Canvas.Top="149.296" Width="78.571" RenderTransformOrigin="0.293,0.531"/>
+                <TextBlock x:Name="passwordError" Height="21.555" Canvas.Left="557.333" TextWrapping="Wrap" Canvas.Top="394.133" Width="208" TextAlignment="Center" Foreground="Red"/>
             </Canvas>
 
         </Canvas>
-
+        <local:RegisterUser x:Name="registerUser" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
+        <local:MainContent x:Name="mainContent" Margin="0,0,0,36" d:IsHidden="True"/>
 
     </Grid>
 </Window>

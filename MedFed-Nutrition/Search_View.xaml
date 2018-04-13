@@ -4,16 +4,31 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
-             mc:Ignorable="d" d:DesignWidth="518.6" Height="272.2">
+             mc:Ignorable="d" d:DesignWidth="1280" Height="720">
     <Grid>
-        <Rectangle Fill="#FF9AF1A1" HorizontalAlignment="Left" Height="272.2" Stroke="Black" VerticalAlignment="Top" Width="518.6"/>
-        <TextBlock HorizontalAlignment="Left" Height="28" Margin="63.2,31.4,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="66.4" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="19.2" Margin="21.6,90.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <Button Content="View" HorizontalAlignment="Left" Height="33.2" Margin="49.6,160.4,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBlock HorizontalAlignment="Left" Height="26.4" Margin="347.6,0,0,0" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" Width="62.2" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="213.2" Margin="279.889,31.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210.2"/>
-        <CheckBox Content="Online&#xD;&#xA;Online" HorizontalAlignment="Left" Height="16.8" Margin="119.6,138.6,0,0" VerticalAlignment="Top" Width="57.6"/>
-        <CheckBox Content="Application&#xD;&#xA;Application" HorizontalAlignment="Left" Height="17" Margin="21.6,138.4,0,0" VerticalAlignment="Top" Width="88"/>
+        <Rectangle HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0" RenderTransformOrigin="0.498,0.492">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF0A2E34" Offset="1"/>
+                    <GradientStop Color="#FF38717F"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="rectangle" Height="480.305" Stroke="White" Width="595.552" RadiusX="10" RadiusY="10" Margin="342.4,73.695,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7B9497" Offset="0"/>
+                    <GradientStop Color="#FF213D40" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Center" Height="67.911" Margin="446.186,89.819,661.395,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.419" FontSize="48" Foreground="White"><Run Text="Search"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="SeachBox" HorizontalAlignment="Center" Height="50.068" Margin="623.605,100.319,379.944,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276.451"/>
+        <ListBox x:Name="ResultsBox" HorizontalAlignment="Center" Height="218.757" Margin="371.567,302.834,379.944,0" VerticalAlignment="Top" Width="528.489" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
+        <RadioButton Content="Application" HorizontalAlignment="Left" Margin="496.835,186.126,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="40.856" Width="132.696"/>
+        <RadioButton Content="Online" HorizontalAlignment="Left" Height="25.437" Margin="680.88,186.126,0,0" VerticalAlignment="Top" Width="80.835" FontSize="20" Foreground="White"/>
+        <Button x:Name="View" Content="View" HorizontalAlignment="Left" VerticalAlignment="Top" Width="192.31" Cursor="Hand" Height="55.642" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="532.648,231.982,0,0"/>
+        <local:Recipe x:Name="Recipe" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1270" d:IsHidden="True"/>
 
     </Grid>
 </UserControl>

@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="MedFed_Nutrition.Recipe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MedFed_Nutrition"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <Rectangle x:Name="Close" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0" RenderTransformOrigin="0.498,0.492">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF0A2E34" Offset="1"/>
+                    <GradientStop Color="#FF38717F"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="66.797" Margin="182.872,108.668,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229.483" Foreground="White" FontSize="48"><Run Text="Recipe Name"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="43.715" Margin="182.872,185.889,0,0" TextWrapping="Wrap" Text="Ingredient:" VerticalAlignment="Top" Width="146.705" Foreground="White" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="29.537" Margin="182.872,299.402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146.705" Foreground="Black" FontSize="24"><Run Foreground="White" Text="Instructions:"/></TextBlock>
+        <Button x:Name="CloseBtn" Content="X" HorizontalAlignment="Left" Height="24.23" Margin="1086.915,108.668,0,0" VerticalAlignment="Top" Width="34.942" Background="#FFFF5050"/>
+        <Button x:Name="PrintBtn" Content="Print" HorizontalAlignment="Left" VerticalAlignment="Top" Width="210.555" Cursor="Hand" Height="58.814" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="537.446,530.179,0,0"/>
+        <TextBlock x:Name="textBlock" Height="42.2" Margin="182.872,234.604,403.811,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="20"><Run Text="Apples, Oranges, Potatoes, Carrots."/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy" Margin="182.872,334.404,403.811,314.037" TextWrapping="Wrap" Foreground="White" FontSize="20"><Run Text="- Warm up in the microwave or put it in the stove at 450F for 30 mins. "/><LineBreak/><Run Text="- Serves 6 people. "/></TextBlock>
+        <Rectangle Margin="124.8,78.4,118.4,97.6" Stroke="White" RadiusX="10" RadiusY="10"/>
+
+    </Grid>
+</UserControl>

@@ -20,15 +20,29 @@ namespace MedFed_Nutrition
     /// </summary>
     public partial class RegisterUser : UserControl
     {
+        List<Tuple<string, string, string>> users = new List<Tuple<string, string, string>>();
+
         public RegisterUser()
         {
             InitializeComponent();
-
             this.button.Click += Button_Click;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string fName = FirstName.Text;
+            string lName = LastName.Text;
+            string password = Password.Password.ToString();
+
+            users.Add(new Tuple<string, string, string>(fName, lName, password));
+            users.ForEach(Console.WriteLine);
+
+            FirstName.Text = String.Empty;
+            LastName.Text = String.Empty;
+            Password.Clear();
+            PasswordBox2.Clear();
+
             this.Visibility = Visibility.Hidden;
         }
     }

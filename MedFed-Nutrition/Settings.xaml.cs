@@ -13,22 +13,34 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MedFed_Nutrition
 {
-    /// <summary>
-    /// Interaction logic for Settings.xaml
-    /// </summary>
+  
+
     public partial class Settings : UserControl
     {
+
         public Settings()
         {
             InitializeComponent();
-            this.image.MouseLeftButtonUp += Image_MouseLeftButtonUp;
+            this.CancelButton.Click += CancelButton_Click;
+            this.SaveButton.Click += SaveButton_Click;
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
         }
 
         private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            this.grid.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;
         }
     }
 }

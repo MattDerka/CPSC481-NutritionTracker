@@ -10,10 +10,18 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FF21313A" HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Height="75.296" Margin="487.923,97.399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321.976" FontSize="48" Foreground="White"><Run FontWeight="Bold" Text="Calorie Needs"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="231.758,229.287,0,0" TextWrapping="Wrap" Text="Proteins" VerticalAlignment="Top" Width="123.661" FontSize="36" Foreground="White"/>
-        <Path HorizontalAlignment="Left" Height="276.755" Margin="152.203,291.227,0,0" VerticalAlignment="Top" Width="267.316" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill" Clip="M-33.703,137.049 L291.797,137.049 L291.797,295.773 L-33.703,295.773 z" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0" RenderTransformOrigin="0.498,0.492">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF0A2E34" Offset="1"/>
+                    <GradientStop Color="#FF38717F"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBlock HorizontalAlignment="Left" Height="75.296" Margin="487.923,97.399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321.976" FontSize="48" Foreground="White" Text="Calorie Needs"/>
+        <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="231.758,189.899,0,0" TextWrapping="Wrap" Text="Proteins" VerticalAlignment="Top" Width="123.661" FontSize="36" Foreground="White"/>
+        <Path HorizontalAlignment="Left" Height="276.755" Margin="152.203,271.533,0,0" VerticalAlignment="Top" Width="267.316" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill" Clip="M-33.703,137.049 L291.797,137.049 L291.797,295.773 L-33.703,295.773 z" RenderTransformOrigin="0.5,0.5">
             <Path.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -29,9 +37,9 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-        <TextBlock HorizontalAlignment="Left" Height="109.564" Margin="244.05,372.299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91.726" FontWeight="Bold" Foreground="White"><Run FontSize="48" Text="25g"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="56.648" Margin="231.758,430.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122.453" FontWeight="Bold" Foreground="White" FontSize="20"><Run Text="of 50g goal"/><LineBreak/><Run/></TextBlock>
-        <Path HorizontalAlignment="Left" Height="281.705" Margin="504.909,283.462,0,0" VerticalAlignment="Top" Width="272.096" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill">
+        <TextBlock HorizontalAlignment="Left" Height="109.564" Margin="244.05,352.605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91.726" FontWeight="Bold" Foreground="White"><Run FontSize="48" Text="25g"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="56.648" Margin="231.758,410.64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122.453" FontWeight="Bold" Foreground="White" FontSize="20"><Run Text="of 50g goal"/><LineBreak/><Run/></TextBlock>
+        <Path HorizontalAlignment="Left" Height="281.705" Margin="504.909,263.768,0,0" VerticalAlignment="Top" Width="272.096" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill">
             <Path.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFD45151" Offset="0"/>
@@ -39,9 +47,9 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-        <TextBlock HorizontalAlignment="Left" Height="83.857" Margin="599.873,366.002,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104.647" FontWeight="Bold" Foreground="White"><Run FontSize="48" Text="47g"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="43.357" Margin="585.873,428.276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118.647" FontWeight="Bold" Foreground="White" FontSize="20" Text="of 47g goal"/>
-        <Path HorizontalAlignment="Left" Height="281.705" Margin="856.923,283.462,0,0" VerticalAlignment="Top" Width="272.096" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill">
+        <TextBlock HorizontalAlignment="Left" Height="83.857" Margin="599.873,346.308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104.647" FontWeight="Bold" Foreground="White"><Run FontSize="48" Text="47g"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="43.357" Margin="585.873,408.582,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118.647" FontWeight="Bold" Foreground="White" FontSize="20" Text="of 47g goal"/>
+        <Path HorizontalAlignment="Left" Height="281.705" Margin="856.923,263.768,0,0" VerticalAlignment="Top" Width="272.096" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill">
             <Path.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF51CED4" Offset="0"/>
@@ -49,11 +57,11 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-        <TextBlock HorizontalAlignment="Left" Height="83.857" Margin="935.887,366.002,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124.147" FontWeight="Bold" Foreground="White"><Run FontSize="48" Text="200g"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="43.357" Margin="935.887,428.276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118.647" FontWeight="Bold" Foreground="White" FontSize="20" Text="of 250g goal"/>
-        <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="613.373,229.287,0,0" TextWrapping="Wrap" Text="Fats" VerticalAlignment="Top" Width="65.161" FontSize="36" Foreground="White" RenderTransformOrigin="0.686,0.544"/>
-        <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="951.373,229.287,0,0" TextWrapping="Wrap" Text="Carbs" VerticalAlignment="Top" Width="103.161" FontSize="36" Foreground="White"/>
-        <Path HorizontalAlignment="Left" Height="276.755" Margin="152.203,291.227,0,0" VerticalAlignment="Top" Width="267.316" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill" Clip="M-33.703,137.049 L291.797,137.049 L291.797,295.773 L-33.703,295.773 z" RenderTransformOrigin="0.5,0.5">
+        <TextBlock HorizontalAlignment="Left" Height="83.857" Margin="935.887,346.308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124.147" FontWeight="Bold" Foreground="White"><Run FontSize="48" Text="200g"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="936,408.306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" FontWeight="Bold" Foreground="White" FontSize="20" Text="of 250g goal"/>
+        <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="613.373,189.899,0,0" TextWrapping="Wrap" Text="Fats" VerticalAlignment="Top" Width="65.161" FontSize="36" Foreground="White" RenderTransformOrigin="0.686,0.544"/>
+        <TextBlock HorizontalAlignment="Left" Height="61.94" Margin="951.373,189.899,0,0" TextWrapping="Wrap" Text="Carbs" VerticalAlignment="Top" Width="103.161" FontSize="36" Foreground="White"/>
+        <Path HorizontalAlignment="Left" Height="276.755" Margin="152.203,271.533,0,0" VerticalAlignment="Top" Width="267.316" Data="M102.5555,36.804001 C65.797912,36.804001 35.999999,67.812088 35.999999,106.0625 35.999999,144.31291 65.797912,175.321 102.5555,175.321 139.31309,175.321 169.11099,144.31291 169.11099,106.0625 169.11099,67.812088 139.31309,36.804001 102.5555,36.804001 z M102.298,0 C158.79562,0 204.59599,47.417747 204.59599,105.9105 204.59599,164.40326 158.79562,211.821 102.298,211.821 45.800372,211.821 -9.523485E-07,164.40326 0,105.9105 -9.523485E-07,47.417747 45.800372,0 102.298,0 z" Stretch="Fill" Clip="M-33.703,137.049 L291.797,137.049 L291.797,295.773 L-33.703,295.773 z" RenderTransformOrigin="0.5,0.5">
             <Path.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -69,9 +77,9 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-        <Ellipse HorizontalAlignment="Left" Height="54" Margin="357.758,351.5,0,0" Stroke="#FF21313A" VerticalAlignment="Top" Width="54" Fill="White" StrokeThickness="12"/>
-        <Ellipse HorizontalAlignment="Left" Height="55.333" Margin="514.909,451.167,0,0" Stroke="#FF21313A" VerticalAlignment="Top" Width="55.333" Fill="White" StrokeThickness="12"/>
-        <Path HorizontalAlignment="Left" Height="134.833" Margin="856.923,488.834,0,0" VerticalAlignment="Top" Width="127.127" Clip="M136.39046,-156.42562 C87.505862,-156.42562 47.877065,-115.18734 47.877065,-64.317352 C47.877065,-13.447363 87.505862,27.790918 136.39046,27.790918 C185.27506,27.790918 224.90384,-13.447363 224.90384,-64.317352 C224.90384,-115.18734 185.27506,-156.42562 136.39046,-156.42562 z M136.048,-205.372 C211.18524,-205.372 272.096,-142.31019 272.096,-64.519499 C272.096,13.271197 211.18524,76.333001 136.048,76.333001 C60.910763,76.333001 -1.2665459E-06,13.271197 1.9751908E-14,-64.519499 C-1.2665459E-06,-142.31019 60.910763,-205.372 136.048,-205.372 z" Data="M79.606279,0 L127.127,0 127.127,134.83299 0,134.83299 0,4.190075 26.429366,39.642624 z" Stretch="Fill">
+        <Ellipse HorizontalAlignment="Left" Height="54" Margin="357.758,331.806,0,0" Stroke="#FF21313A" VerticalAlignment="Top" Width="54" Fill="White" StrokeThickness="12"/>
+        <Ellipse HorizontalAlignment="Left" Height="55.333" Margin="514.909,431.473,0,0" Stroke="#FF21313A" VerticalAlignment="Top" Width="55.333" Fill="White" StrokeThickness="12"/>
+        <Path HorizontalAlignment="Left" Height="134.833" Margin="856.923,469.14,0,0" VerticalAlignment="Top" Width="127.127" Clip="M136.39046,-156.42562 C87.505862,-156.42562 47.877065,-115.18734 47.877065,-64.317352 C47.877065,-13.447363 87.505862,27.790918 136.39046,27.790918 C185.27506,27.790918 224.90384,-13.447363 224.90384,-64.317352 C224.90384,-115.18734 185.27506,-156.42562 136.39046,-156.42562 z M136.048,-205.372 C211.18524,-205.372 272.096,-142.31019 272.096,-64.519499 C272.096,13.271197 211.18524,76.333001 136.048,76.333001 C60.910763,76.333001 -1.2665459E-06,13.271197 1.9751908E-14,-64.519499 C-1.2665459E-06,-142.31019 60.910763,-205.372 136.048,-205.372 z" Data="M79.606279,0 L127.127,0 127.127,134.83299 0,134.83299 0,4.190075 26.429366,39.642624 z" Stretch="Fill">
             <Path.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF395051" Offset="0"/>
@@ -79,7 +87,7 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-        <Ellipse HorizontalAlignment="Left" Height="53.334" Margin="951.373,511.833,0,0" Stroke="#FF21313A" VerticalAlignment="Top" Width="53.334" Fill="White" StrokeThickness="12"/>
+        <Ellipse HorizontalAlignment="Left" Height="53.334" Margin="951.373,492.139,0,0" Stroke="#FF21313A" VerticalAlignment="Top" Width="53.334" Fill="White" StrokeThickness="12"/>
 
     </Grid>
 </UserControl>

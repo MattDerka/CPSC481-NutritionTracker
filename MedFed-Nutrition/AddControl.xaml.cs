@@ -25,17 +25,16 @@ namespace MedFed_Nutrition
         public AddControl()
         {
             InitializeComponent();
-            this.Browse.Click += Browse_Click;
+            this.Save.Click += Save_Click;
         }
 
-        private void Browse_Click(object sender, RoutedEventArgs e)
+        private void Save_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Title = "Select a Picture";
-            if (open.ShowDialog() == true)
-            {
-                Image.Source = new BitmapImage(new Uri(open.FileName));
-            }
+            string saveMsg = "Recipe Saved";
+            MessageBox.Show(saveMsg);
+            this.Visibility = Visibility.Hidden;
+            
         }
+
     }
 }

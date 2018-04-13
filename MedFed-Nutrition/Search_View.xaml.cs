@@ -20,9 +20,47 @@ namespace MedFed_Nutrition
     /// </summary>
     public partial class Search_View : UserControl
     {
+        List<string> recipes = new List<string>();
+
         public Search_View()
         {
             InitializeComponent();
+            this.Recipe.Visibility = Visibility.Hidden;
+
+
+            recipes.Add("Chicken Tenders");
+            recipes.Add("Chicken Breast");
+            recipes.Add("Pizza");
+            recipes.Add("Greek Salad");
+
+            View.Click += View_Click;
+            ResultsBox.MouseDoubleClick += ResultsBox_MouseDoubleClick;
         }
+
+        private void ResultsBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (ResultsBox.SelectedItem != null)
+            {
+                Console.WriteLine(ResultsBox.SelectedItem.ToString());
+                this.Recipe.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void View_Click(object sender, RoutedEventArgs e)
+        {
+            ResultsBox.Items.Clear();
+
+            string recipeSearch = SeachBox.Text;
+
+            foreach(string r in recipes)
+            {
+                if (r.ToUpper().Contains(recipeSearch.ToUpper()))
+                {
+                    ResultsBox.Items.Add(r);
+                }
+            }
+        }
+
+
     }
 }

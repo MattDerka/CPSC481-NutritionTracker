@@ -4,22 +4,46 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MedFed_Nutrition"
-             mc:Ignorable="d" 
-             d:DesignHeight="320.4" d:DesignWidth="518.6">
+             mc:Ignorable="d" d:DesignWidth="1280" Height="710.4">
     <Grid x:Name="grid">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320.4" Stroke="Black" VerticalAlignment="Top" Width="518.6" Margin="0,0,-518.6,-320.4"/>
-        <Rectangle Fill="#FFB9B9EE" HorizontalAlignment="Left" Height="46.2" Stroke="Black" VerticalAlignment="Top" Width="98.6" Margin="0,0,-98.6,-46.2"/>
-        <Rectangle Fill="#FFB9CDEE" HorizontalAlignment="Left" Height="46.866" Margin="98.6,-0.666,0,0" Stroke="Black" VerticalAlignment="Top" Width="420"/>
-        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="15.727" Margin="411.6,14.787,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="39.6" Cursor="Hand"/>
-        <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="46.866" Margin="268.6,-0.666,0,0" VerticalAlignment="Top" Width="69"/>
-        <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="98.6,-0.666,0,0" VerticalAlignment="Top" Width="71.4"/>
-        <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="46.866" Margin="337.6,-0.666,0,0" VerticalAlignment="Top" Width="56.2"/>
-        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="273.867" Margin="0,46.533,0,0" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
-        <Button x:Name="AddRecipe" Cursor="Hand" Content="Add New Recipe" HorizontalAlignment="Left" Height="46.866" Margin="170,-0.666,0,0" VerticalAlignment="Top" Width="98.6"/>
-        <local:AddControl x:Name="addControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
-        <Image x:Name="image" Source="setting.png" Margin="463.6,10,10,283.34" Cursor="Hand"/>
-        <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="0,46.2,0,0" d:IsHidden="True"/>
-        <local:GoalsControl x:Name="GoalsControl" Margin="0,46.2,0,0" d:IsHidden="True"/>
-        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="320.4" VerticalAlignment="Top" Width="518.6" d:IsHidden="True"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="720" Stroke="Black" VerticalAlignment="Top" Width="1280" Margin="0,-10,0,0" RenderTransformOrigin="0.498,0.492">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF0A2E34" Offset="1"/>
+                    <GradientStop Color="#FF38717F"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="26.746" Margin="1128.4,15.806,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73.267" Cursor="Hand" TextDecorations="{x:Null}" Foreground="White" FontSize="20" Text="Logout"/>
+        <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="52.766" Margin="488.867,7.834,0,0" VerticalAlignment="Top" Width="144.2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="20"/>
+        <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="53.766" Margin="140,6.834,0,0" VerticalAlignment="Top" Width="144.266" Foreground="White" BorderBrush="{x:Null}" FontSize="20" Background="{x:Null}"/>
+        <Button x:Name="Goal" Content="Goals" Cursor="Hand" HorizontalAlignment="Left" Height="49.199" Margin="665.267,8.334,0,0" VerticalAlignment="Top" Width="143" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20"/>
+        <local:Search_View x:Name="search_View" HorizontalAlignment="Left" Height="657.8" Margin="0,62.2,0,0" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
+        <Button x:Name="AddRecipe" Cursor="Hand" Content="Add New Recipe" HorizontalAlignment="Left" Height="52.266" Margin="289.266,8.334,0,0" VerticalAlignment="Top" Width="155.601" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="20"/>
+        <local:CalorieANDNutrition x:Name="calorieANDNutrition" Margin="0,62.2,0,-46.2" d:IsHidden="True"/>
+        <local:GoalsControl x:Name="GoalsControl" Margin="0,60.6,0,-46.2" Foreground="{x:Null}" d:IsHidden="True"/>
+        <local:RecipeAddOption x:Name="RecipeAddOption" HorizontalAlignment="Left" Height="657.8" Margin="0,62.2,0,0" VerticalAlignment="Top" Width="1280" d:IsHidden="True"/>
+        <Path Data="M109.6,51.2 L1521.515,46.533" Fill="White" HorizontalAlignment="Left" Height="4.667" Margin="0,57.533,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="1280"/>
+        <Image x:Name="image" Source="setting2.png" Cursor="Hand" Margin="1208.8,14,10.4,671.8" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="home" Cursor="Hand" Source="home_icon.png" Margin="20.8,3.15,1140,649.8"></Image>
+        <Image x:Name="graph1" Source="481- MainPageGraph.png" Margin="20.8,86.8,672.933,348.887"/>
+        <Image x:Name="graph2" Source="481- MainPageGraph2.png" Margin="20.8,366.513,633.6,50.744"/>
+        <Image x:Name="graph3" Source="481- MainPageGraph3.png" Margin="552.696,366.513,0,50.744"/>
+        <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="647.467" Margin="0,62.533,-8.533,0" VerticalAlignment="Top" Width="1288.533" d:IsHidden="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="35.2" Margin="665.267,105.6,0,0" TextWrapping="Wrap" Text="Welcome:" VerticalAlignment="Top" Width="107.533" FontSize="22" Foreground="White"/>
+        <Label x:Name="Fname" Content="" HorizontalAlignment="Left" Margin="804.9,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
+        <Label x:Name="lName" Content="" HorizontalAlignment="Left" Margin="964.5,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
     </Grid>
 </UserControl>
