@@ -26,14 +26,19 @@ namespace MedFed_Nutrition
         {
             InitializeComponent();
             this.Save.Click += Save_Click;
+            this.arrow.MouseLeftButtonUp += Arrow_MouseLeftButtonUp;
+        }
+
+        private void Arrow_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             string saveMsg = "Recipe Saved";
             MessageBox.Show(saveMsg);
-            this.Visibility = Visibility.Hidden;
-            
+            this.Visibility = Visibility.Hidden; 
         }
 
     }
