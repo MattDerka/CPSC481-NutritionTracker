@@ -29,6 +29,6 @@
         <TextBox x:Name="TitleBox" HorizontalAlignment="Left" Height="44" Margin="460,151.901,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367" RenderTransformOrigin="0.5,0.5"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221.243" Cursor="Hand" Height="64.014" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="530.8,499.909,0,0"/>
         <TextBlock HorizontalAlignment="Left" Height="31" Margin="467,203.901,0,0" TextWrapping="Wrap" Text="Content:" VerticalAlignment="Top" Width="91" FontSize="20" Foreground="White"/>
-
+        <Image x:Name="arrow2" Source="arrow2.png" Margin="407,26,772,593.6"></Image>
     </Grid>
 </UserControl>

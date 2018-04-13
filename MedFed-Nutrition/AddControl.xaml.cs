@@ -26,7 +26,7 @@ namespace MedFed_Nutrition
         {
             InitializeComponent();
             this.Save.Click += Save_Click;
-            this.arrow.MouseLeftButtonUp += Arrow_MouseLeftButtonUp;
+            this.arrow2.MouseLeftButtonUp += Arrow_MouseLeftButtonUp;
         }
 
         private void Arrow_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

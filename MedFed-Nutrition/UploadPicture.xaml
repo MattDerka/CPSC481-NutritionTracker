@@ -29,6 +29,6 @@
         <Image x:Name="Image" HorizontalAlignment="Left" Height="291.426" Margin="445.6,171.441,0,0" VerticalAlignment="Top" Width="375.771"/>
         <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="177.004" Cursor="Hand" Height="43.278" FontSize="20" Background="#FFFFB468" Foreground="White" BorderBrush="{x:Null}" Margin="658.8,483.394,0,0"/>
         <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="182.534" Cursor="Hand" Height="44.631" FontSize="20" Background="#FF4CDA73" Foreground="White" BorderBrush="{x:Null}" Margin="445.6,482.041,0,0"/>
-
+        <Image x:Name="arrow" Source="arrow2.png" Margin="428,68,817,572.6" RenderTransformOrigin="0.5,0.5"/>
     </Grid>
 </UserControl>
