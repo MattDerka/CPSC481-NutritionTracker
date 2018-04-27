@@ -17,19 +17,12 @@
                 </RadialGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="211.397" Stroke="White" VerticalAlignment="Top" Width="341.152" RadiusX="10" RadiusY="10" Margin="701.348,101.536,0,0">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF979797" Offset="0"/>
-                    <GradientStop Color="#FF39494B" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Height="35.2" Margin="744.767,105.6,0,0" TextWrapping="Wrap" Text="Welcome:" VerticalAlignment="Top" Width="107.533" FontSize="22" Foreground="White"/>
-        <Label x:Name="Fname" Content="" HorizontalAlignment="Left" Margin="859.867,101.536,0,0" VerticalAlignment="Top" Width="106.393" Background="{x:Null}" Foreground="White" FontSize="22"/>
-        <TextBlock x:Name="welcome_Copy" HorizontalAlignment="Left" Height="35.2" Margin="795.367,148.8,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="47.933" FontSize="22" Foreground="White"/>
-        <TextBlock x:Name="welcome_Copy1" HorizontalAlignment="Left" Height="35.2" Margin="728.7,196.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123.6" FontSize="22" Foreground="White"><Run Text="Weight"/><Run Text="("/><Run Text="Kg"/><Run Text=")"/><Run Text=":"/></TextBlock>
-        <TextBlock x:Name="welcome_Copy4" HorizontalAlignment="Left" Height="35.2" Margin="773.1,250.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79.2" FontSize="22" Foreground="White" Text="Height:"/>
+        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="211.397" Stroke="White" VerticalAlignment="Top" Width="564.352" RadiusX="10" RadiusY="10" Margin="658.148,97.051,0,0" Opacity="0.4" Fill="#FF777777"/>
+        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Height="73.599" Margin="279.767,90.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202.333" FontSize="40" Foreground="White" d:LayoutOverrides="HorizontalAlignment" Text="Welcome:"/>
+        <Label x:Name="Fname" Content="" HorizontalAlignment="Left" Margin="241.866,169.199,0,0" VerticalAlignment="Top" Width="325.993" Background="{x:Null}" Foreground="White" FontSize="60" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBlock x:Name="welcome_Copy" HorizontalAlignment="Left" Height="35.2" Margin="727.794,120.26,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="80.473" FontSize="22" Foreground="White"/>
+        <TextBlock x:Name="welcome_Copy1" HorizontalAlignment="Left" Height="35.2" Margin="727.794,183.263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127.206" FontSize="22" Foreground="White"><Run Text="Weight"/><Run Text="("/><Run Text="Kg"/><Run Text=")"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="welcome_Copy4" HorizontalAlignment="Left" Height="35.2" Margin="727.794,250.063,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132.967" FontSize="22" Foreground="White" Text="Height:"/>
         <TextBlock x:Name="Logout" HorizontalAlignment="Left" Height="26.746" Margin="1128.4,15.806,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73.267" Cursor="Hand" TextDecorations="{x:Null}" Foreground="White" FontSize="20" Text="Logout"/>
         <Button x:Name="NutritionButton" Cursor="Hand" Content="Nutrition" HorizontalAlignment="Left" Height="52.766" Margin="488.867,7.834,0,0" VerticalAlignment="Top" Width="144.2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="20"/>
         <Button x:Name="Search" Content="Search" Cursor="Hand" HorizontalAlignment="Left" Height="53.766" Margin="140,6.834,0,0" VerticalAlignment="Top" Width="144.266" Foreground="White" BorderBrush="{x:Null}" FontSize="20" Background="{x:Null}"/>
@@ -51,12 +44,11 @@
             </Image.RenderTransform>
         </Image>
         <Image x:Name="home" Cursor="Hand" Source="home_icon.png" Margin="20.8,3.15,1140,649.8"></Image>
-        <Image x:Name="graph1" Source="481- MainPageGraph.png" Margin="20.8,86.8,672.933,348.887"/>
-        <Image x:Name="graph2" Source="481- MainPageGraph2.png" Margin="20.8,366.513,633.6,50.744"/>
-        <Image x:Name="graph3" Source="481- MainPageGraph3.png" Margin="552.696,366.513,0,50.744"/>
+        <Image x:Name="grapg1" Source="grapg1.png" Margin="27.2,323.448,619.733,35.6"/>
+        <Image x:Name="grapg2" Source="grapg2.png" Margin="622.067,333.623,43.2,35.6"/>
         <local:Settings x:Name="settings" HorizontalAlignment="Left" Height="647.467" Margin="0,62.533,-8.533,0" VerticalAlignment="Top" Width="1288.533" d:IsHidden="True"/>
-        <Label x:Name="Fname_Copy" Content="" HorizontalAlignment="Left" Margin="860,144,0,0" VerticalAlignment="Top" Width="62" Background="{x:Null}" Foreground="White" FontSize="22"/>
-        <Label x:Name="Fname_Copy1" Content="" HorizontalAlignment="Left" Margin="860,193,0,0" VerticalAlignment="Top" Width="62" Background="{x:Null}" Foreground="White" FontSize="22"/>
-        <Label x:Name="Fname_Copy2" Content="" HorizontalAlignment="Left" Margin="860,246,0,0" VerticalAlignment="Top" Width="62" Background="{x:Null}" Foreground="White" FontSize="22"/>
+        <Label x:Name="Fname_Copy" Content="" HorizontalAlignment="Left" Margin="984.867,89.196,0,0" VerticalAlignment="Top" Width="216.8" Background="{x:Null}" Foreground="White" FontSize="50"/>
+        <Label x:Name="Fname_Copy1" Content="" HorizontalAlignment="Left" Margin="984.867,157.199,0,0" VerticalAlignment="Top" Width="216.8" Background="{x:Null}" Foreground="White" FontSize="50"/>
+        <Label x:Name="Fname_Copy2" Content="" HorizontalAlignment="Left" Margin="984.5,228,0,0" VerticalAlignment="Top" Width="216.8" Background="{x:Null}" Foreground="White" FontSize="50"/>
     </Grid>
 </UserControl>

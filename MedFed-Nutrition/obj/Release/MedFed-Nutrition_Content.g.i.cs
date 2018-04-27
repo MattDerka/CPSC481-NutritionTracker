@@ -8,8 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("481-%20mainpagegraph.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("481-%20mainpagegraph2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("481-%20mainpagegraph3.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("grapg1.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("grapg2.png")]
 
 

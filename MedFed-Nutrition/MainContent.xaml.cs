@@ -29,9 +29,8 @@ namespace MedFed_Nutrition
             this.GoalsControl.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
             this.RecipeAddOption.Visibility = Visibility.Hidden;
-            this.graph1.Visibility = Visibility.Visible;
-            this.graph2.Visibility = Visibility.Visible;
-            this.graph3.Visibility = Visibility.Visible;
+            this.grapg1.Visibility = Visibility.Visible;
+            this.grapg2.Visibility = Visibility.Visible;
             this.Visibility = Visibility.Visible;
 
 
@@ -50,9 +49,8 @@ namespace MedFed_Nutrition
             this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
-            this.graph1.Visibility = Visibility.Visible;
-            this.graph2.Visibility = Visibility.Visible;
-            this.graph3.Visibility = Visibility.Visible;
+            this.grapg1.Visibility = Visibility.Visible;
+            this.grapg2.Visibility = Visibility.Visible;
             this.Fname.Visibility = Visibility.Visible;
             this.welcome.Visibility = Visibility.Visible;
             this.settings.Visibility = Visibility.Hidden;
@@ -72,9 +70,8 @@ namespace MedFed_Nutrition
             //this.addControl.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Visible;
-            this.graph1.Visibility = Visibility.Hidden;
-            this.graph2.Visibility = Visibility.Hidden;
-            this.graph3.Visibility = Visibility.Hidden;
+            this.grapg1.Visibility = Visibility.Hidden;
+            this.grapg2.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
@@ -89,9 +86,8 @@ namespace MedFed_Nutrition
             this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Visible;
             this.GoalsControl.Visibility = Visibility.Hidden;
-            this.graph1.Visibility = Visibility.Hidden;
-            this.graph2.Visibility = Visibility.Hidden;
-            this.graph3.Visibility = Visibility.Hidden;
+            this.grapg1.Visibility = Visibility.Hidden;
+            this.grapg2.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
@@ -106,9 +102,8 @@ namespace MedFed_Nutrition
             this.RecipeAddOption.Visibility = Visibility.Visible;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
-            this.graph1.Visibility = Visibility.Hidden;
-            this.graph2.Visibility = Visibility.Hidden;
-            this.graph3.Visibility = Visibility.Hidden;
+            this.grapg1.Visibility = Visibility.Hidden;
+            this.grapg2.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
@@ -123,9 +118,8 @@ namespace MedFed_Nutrition
             this.RecipeAddOption.Visibility = Visibility.Hidden;
             this.calorieANDNutrition.Visibility = Visibility.Hidden;
             this.GoalsControl.Visibility = Visibility.Hidden;
-            this.graph1.Visibility = Visibility.Hidden;
-            this.graph2.Visibility = Visibility.Hidden;
-            this.graph3.Visibility = Visibility.Hidden;
+            this.grapg1.Visibility = Visibility.Hidden;
+            this.grapg2.Visibility = Visibility.Hidden;
             this.Fname.Visibility = Visibility.Hidden;
             this.welcome.Visibility = Visibility.Hidden;
             this.settings.Visibility = Visibility.Hidden;
